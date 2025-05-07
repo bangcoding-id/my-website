@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bangcoding.id</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+<!--Perintah Logo Bangcoding Berputar-->
+  <style>
+  @keyframes spin-hover {
+    from { transform: rotate(0deg) scale(1); }
+    to { transform: rotate(360deg) scale(1.1); }
+  }
+  .hover\:spin-hover:hover {
+    animation: spin-hover 2s linear infinite;
+  }
+</style>
+
+</head>
+<body class="bg-gray-100">
+
+  <!-- Sticky Header -->
+  <header class="sticky top-0 z-50 bg-gradient-to-r from-violet-800 via-indigo-900 to-blue-900 text-white backdrop-blur-md p-6 shadow-lg">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Bangcoding.id</h1>
+      <nav class="space-x-4">
+        <a href="#beranda" class="hover:underline">Beranda</a>
+        <a href="#bahasapemrograman" class="hover:underline">Bahasa Pemrograman</a>
+        <a href="#pricelist" class="hover:underline">Pricelist</a>
+        <a href="#portofolio" class="hover:underline">Portofolio</a>
+        <a href="#testimoni" class="hover:underline">Testimoni</a>
+        <!--<a href="#freekonsultasi" class="hover:underline">Free Konsultasi</a>-->
+      </nav>
+    </div>
+  </header>
+
+<!-- Hero Section -->
+<section id="beranda" class="py-16 bg-gray-100 via-gray-100 to-gray-100">
+  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+
+    <!-- Membuat Posisi Logo Bangcoding Menjadi Rata Kiri -->
+    <div class="md:w-1/2 space-y-10 text-left relative">
+
+      <!-- Logo Bangcoding -->
+      <div class="mb-6">
+        <img src="Gambar/bangcodinglogo.PNG" alt="Logo Bangcoding" class="h-20 md:h-24 w-auto hover:spin-hover transition-transform">
+      </div>
+
+      <!-- Judul & Deskripsi Halaman 1 -->
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+        Bangcoding, You're IT Partner, Help, Support and Service
+      </h1>
+      <p class="text-black-800">
+        Solusi Jasa Ahli IT untuk semua kebutuhan bisnis dan pribadi anda, build your digital life and business with us
+      </p>
+
+      <!-- Tombol Konsultasi Gratis -->
+      <a href="https://wa.me/6289515007825" target="_blank"
+         class="inline-block bg-gradient-to-r from-violet-800 via-indigo-900 to-blue-900 text-white py-3 px-6 transition-all duration-500 hover:from-purple-700 hover:via-indigo-700 hover:to-blue-700 rounded-xl">
+        Konsultasi Gratis
+      </a>
+    </div>
+
+    <!-- Gambar Programer Sebelah Kanan -->
+    <div class="md:w-1/2 mt-10 md:mt-0">
+      <img src="Gambar/gambarprogramer.png"
+       width="600" height="200" alt="Jasa Pembuatan Website"
+       class="mx-auto transition-transform duration-500 hover:scale-105">
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Bagian Jenis Bahasa Pemrograman -->
+<section id="bahasapemrograman" class="bg-gray-200 py-16 px-4 md:px-10 text-black">
+  <div class="container mx-auto flex flex-col md:flex-row gap-10 items-start">
+    
+ <!-- Left Accordion Buttons-->
+<div class="md:w-1/2 space-y-4 w-full md:order-1">
+  <button class="w-full transform hover:scale-105 transition-transform duration-300 flex justify-between items-center bg-gradient-to-r from-purple-900 via-purple-700 to-blue-900 text-white border-none rounded-full px-6 py-3 text-left font-semibold shadow-sm focus:outline-none">
+    Dart (Flutter), CI 3/4, PHP (Laravel, WordPress), Pascal (Delphi, Lazarus)
+    <span class="text-xs">⬤</span>
+  </button>
+
+  <button class="w-full transform hover:scale-105 transition-transform duration-300 flex justify-between items-center bg-gradient-to-r from-purple-900 via-purple-700 to-blue-900 text-white border-none rounded-full px-6 py-3 text-left font-semibold shadow-sm focus:outline-none">
+    Javascript dan Kotlin (Node.js, Vue.js, Nuxt.js, ReactJS, Android Studio, Bootstrap, React Native, Electron JS, Express.js, Sequelize)
+    <span class="text-xs">⬤</span>
+  </button>
+
+  <button class="w-full transform hover:scale-105 transition-transform duration-300 flex justify-between items-center bg-gradient-to-r from-purple-900 via-purple-700 to-blue-900 text-white border-none rounded-full px-6 py-3 text-left font-semibold shadow-sm focus:outline-none">
+    XML (Extensible Markup Language): Kotlin + XML, Java + XML, C, C#
+    <span class="text-xs">⬤</span>
+  </button>
+
+  <button class="w-full transform hover:scale-105 transition-transform duration-300 flex justify-between items-center bg-gradient-to-r from-purple-900 via-purple-700 to-blue-900 text-white border-none rounded-full px-6 py-3 text-left font-semibold shadow-sm focus:outline-none">
+    HTML (Bootstrap, Electron JS), Typescript, Python, CSS (Bootstrap, Tailwind CSS, Electron JS)
+    <span class="text-xs">⬤</span>
+  </button>
+</div>
+
+    <!-- Right Text (Bahasa Pemrograman Yang Dipakai)-->
+    <div class="md:w-1/2 space-y-4 md:order-2">
+      <h2 class="text-3xl md:text-4xl font-bold leading-snug">
+        Bahasa Pemrograman <br /> Yang Kami Pakai
+      </h2>
+      <p class="text-black-800">
+        Dengan bahasa pemrograman, kamu bisa menjadi bagian dari revolusi teknologi, dan menciptakan masa depan yang lebih baik.
+      </p>
+    </div>
+    
+  </div>
+</section>
+
+ <!-- Halaman Portofolio -->
+<section id="portofolio" class="bg-gray-100 py-16 px-6">
+  <h2 class="text-3xl font-bold text-center mb-12">Portofolio</h2>
+  <div class="max-w-7xl mx-auto">
+    <div class="swiper w-full max-w-5xl mx-auto px-4">
+      <!-- Wrapper -->
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide text-center p-6">
+          <img 
+            src="Gambarportofolio/portofolio1.JPEG"
+            alt="Website Dietela"
+            class="mx-auto rounded-xl object-cover w-[300px] h-[200px] sm:w-[400px] sm:h-[250px] md:w-[500px] md:h-[300px]">
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide text-center p-6">
+          <img 
+            src="Gambarportofolio/portofolio2.JPEG"
+            alt="Website Sekolahdesain"
+            class="mx-auto rounded-xl object-cover w-[300px] h-[200px] sm:w-[400px] sm:h-[250px] md:w-[500px] md:h-[300px]">
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide text-center p-6">
+          <img 
+            src="Gambarportofolio/portofolio3.JPEG"
+            alt="Website Survey"
+            class="mx-auto rounded-xl object-cover w-[300px] h-[200px] sm:w-[400px] sm:h-[250px] md:w-[500px] md:h-[300px]">
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide text-center p-6">
+          <img 
+            src="Gambarportofolio/portofolio4.JPEG"
+            alt="Website Survey2"
+            class="mx-auto rounded-xl object-cover w-[300px] h-[200px] sm:w-[400px] sm:h-[250px] md:w-[500px] md:h-[300px]">
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="swiper-slide text-center p-6">
+          <img 
+            src="Gambarportofolio/portofolio5.JPEG"
+            alt="Website Aksela"
+            class="mx-auto rounded-xl object-cover w-[300px] h-[200px] sm:w-[400px] sm:h-[250px] md:w-[500px] md:h-[300px]">
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="swiper-slide text-center p-6">
+          <img 
+            src="Gambarportofolio/portofolio6.JPEG"
+            alt="Website Creativa"
+            class="mx-auto rounded-xl object-cover w-[300px] h-[200px] sm:w-[400px] sm:h-[250px] md:w-[500px] md:h-[300px]">
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination mt-4"></div>
+
+      <!-- Navigation Buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Swiper Initialization -->
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 2,
+      },
+    },
+  });
+</script>
+
+<!-- Keuntungan Memakai Jasa Kami -->
+<section id="keuntungan" class="bg-gray-200 py-16 px-6 text-black">
+  <div class="max-w-7xl mx-auto text-center mb-12">
+    <h2 class="text-4xl font-bold mb-4">Keuntungan Memakai Jasa Kami</h2>
+    <p class="text-lg text-black/80">Kami memberikan solusi website terbaik untuk kebutuhan bisnis dan personal Anda.</p>
+  </div>
+
+  <!-- List Keuntungan -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+    
+    <!-- Item -->
+    <div class="p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform">
+      <h3 class="text-xl font-semibold mb-2 text-white">Desain Profesional</h3>
+      <p class="text-white/80">
+        Tampilan modern, responsif, dan sesuai dengan identitas brand Anda.
+      </p>
+    </div>
+
+    <div class="p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform">
+      <h3 class="text-xl font-semibold mb-2 text-white">SEO Friendly</h3>
+      <p class="text-white/80">
+        Website Anda mudah ditemukan di Google karena struktur yang ramah mesin pencari.
+      </p>
+    </div>
+
+    <div class="p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform">
+      <h3 class="text-xl font-semibold mb-2 text-white">Support & Maintenance</h3>
+      <p class="text-white/80">
+        Kami siap bantu jika ada kendala atau kebutuhan tambahan setelah website selesai.
+      </p>
+    </div>
+
+    <div class="p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform">
+      <h3 class="text-xl font-semibold mb-2 text-white">Waktu Pengerjaan Cepat</h3>
+      <p class="text-white/80">
+        Proses pembuatan yang efisien dan terjadwal, tanpa mengorbankan kualitas.
+      </p>
+    </div>
+
+    <div class="p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform">
+      <h3 class="text-xl font-semibold mb-2 text-white">Harga Terjangkau</h3>
+      <p class="text-white/80">
+        Investasi yang sebanding dengan hasil, tanpa biaya tersembunyi.
+      </p>
+    </div>
+
+    <div class="p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform">
+      <h3 class="text-xl font-semibold mb-2 text-white">Teknologi Terbaru</h3>
+      <p class="text-white/80">
+        Kami gunakan framework dan bahasa pemrograman modern yang powerful.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Pricing Section -->
+<section id="pricelist" class="py-16 px-6 max-w-6xl mx-auto">
+  <h2 class="text-3xl font-bold text-center text-black mb-12">Pricelist Website</h2>
+  <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+    
+    <!-- Website Pribadi / Portofolio -->
+    <div class="relative p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow-lg hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform text-white">
+      <h3 class="font-bold text-yellow-300 text-xl mb-2">Website Pribadi / Portofolio</h3>
+      <p class="text-lg font-semibold mb-4">Start From: Rp 1.500.000,-</p>
+      <ul class="list-disc pl-5 mb-4 space-y-1">
+        <li>1 Halaman Awal</li>
+        <li>Free Hosting & Domain</li>
+        <li>Desain Responsive</li>
+        <li>Free 1x Revisi Konten</li>
+        <li>Free 1x Revisi Desain</li>
+        <li>Free SSL</li>
+        <li>Dukungan Yoast SEO</li>
+        <li>Pengerjaan Estimasi 7 Hari Kerja</li>
+      </ul>
+      <a href="https://wa.me/6289515007825" target="_blank" class="bg-black hover:bg-green-600 block text-center py-2 rounded-lg font-semibold transition">Pesan Sekarang</a>
+    </div>
+
+    <!-- Company Profile -->
+    <div class="relative p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow-lg hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform text-white">
+      <h3 class="font-bold text-yellow-300 text-xl mb-2">Website Company Profile</h3>
+      <p class="text-lg font-semibold mb-4">Start From: Rp 1.500.000,-</p>
+      <ul class="list-disc pl-5 mb-4 space-y-1">
+        <li>1 Halaman Awal</li>
+        <li>Free Hosting & Domain</li>
+        <li>Desain Responsive</li>
+        <li>Free 1x Revisi Konten</li>
+        <li>Free 1x Revisi Desain</li>
+        <li>Free SSL</li>
+        <li>Dukungan Yoast SEO</li>
+        <li>Pengerjaan Estimasi 7 Hari Kerja</li>
+      </ul>
+      <a href="https://wa.me/6289515007825" target="_blank" class="bg-black hover:bg-green-600 block text-center py-2 rounded-lg font-semibold transition">Pesan Sekarang</a>
+    </div>
+
+    <!-- Landing Page / Sales Page -->
+    <div class="relative p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow-lg hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform text-white">
+      <h3 class="font-bold text-yellow-300 text-xl mb-2">Website Landing Page / Sales Page</h3>
+      <p class="text-lg font-semibold mb-4">Start From: Rp 1.500.000,-</p>
+      <ul class="list-disc pl-5 mb-4 space-y-1">
+        <li>1 Halaman Awal</li>
+        <li>Free Hosting & Domain</li>
+        <li>Desain Responsive</li>
+        <li>Free 1x Revisi Konten</li>
+        <li>Free 1x Revisi Desain</li>
+        <li>Free SSL</li>
+        <li>Dukungan Yoast SEO</li>
+        <li>Pengerjaan Estimasi 7 Hari Kerja</li>
+      </ul>
+      <a href="https://wa.me/6289515007825" target="_blank" class="bg-black hover:bg-green-600 block text-center py-2 rounded-lg font-semibold transition">Pesan Sekarang</a>
+    </div>
+
+    <!-- Blog / Media Online -->
+    <div class="relative p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow-lg hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform text-white">
+      <h3 class="font-bold text-yellow-300 text-xl mb-2">Blog / Media Online</h3>
+      <p class="text-lg font-semibold mb-4">Start From: Rp 1.500.000,-</p>
+      <ul class="list-disc pl-5 mb-4 space-y-1">
+        <li>1 Halaman Awal</li>
+        <li>Free Hosting & Domain</li>
+        <li>Desain Responsive</li>
+        <li>Free 1x Revisi Konten</li>
+        <li>Free 1x Revisi Desain</li>
+        <li>Free SSL</li>
+        <li>Dukungan Yoast SEO</li>
+        <li>Pengerjaan Estimasi 7 Hari Kerja</li>
+      </ul>
+      <a href="https://wa.me/6289515007825" target="_blank" class="bg-black hover:bg-green-600 block text-center py-2 rounded-lg font-semibold transition">Pesan Sekarang</a>
+    </div>
+
+    <!-- Website Bisnis UMKM -->
+    <div class="relative p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow-lg hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform text-white">
+      <h3 class="font-bold text-yellow-300 text-xl mb-2">Website Bisnis UMKM</h3>
+      <p class="text-lg font-semibold mb-4">Start From: Rp 2.000.000,-</p>
+      <ul class="list-disc pl-5 mb-4 space-y-1">
+        <li>1 Halaman Awal</li>
+        <li>Free Hosting & Domain</li>
+        <li>Desain Responsive</li>
+        <li>Free 1x Revisi Desain</li>
+        <li>Free 1x Revisi Konten</li>
+        <li>Free SSL</li>
+        <li>Dukungan Yoast SEO</li>
+        <li>Pengerjaan Estimasi 14 Hari Kerja</li>
+      </ul>
+      <a href="https://wa.me/6289515007825" target="_blank" class="bg-black hover:bg-green-600 block text-center py-2 rounded-lg font-semibold transition">Pesan Sekarang</a>
+    </div>
+
+    <!-- Website Sekolah / Organisasi -->
+    <div class="relative p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow-lg hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform text-white">
+      <h3 class="font-bold text-yellow-300 text-xl mb-2">Website Sekolah / Organisasi</h3>
+      <p class="text-lg font-semibold mb-4">Start From: Rp 2.500.000,-</p>
+      <ul class="list-disc pl-5 mb-4 space-y-1">
+        <li>1 Halaman Awal</li>
+        <li>Free Hosting & Domain</li>
+        <li>Desain Responsive</li>
+        <li>Free 1x Revisi Desain</li>
+        <li>Free 1x Revisi Konten</li>
+        <li>Free SSL</li>
+        <li>Dukungan Yoast SEO</li>
+        <li>Pengerjaan Estimasi 15 Hari Kerja</li>
+      </ul>
+      <a href="https://wa.me/6289515007825" target="_blank" class="bg-black hover:bg-green-600 block text-center py-2 rounded-lg font-semibold transition">Pesan Sekarang</a>
+    </div>
+
+    <!-- Website Toko Online -->
+    <div class="relative p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow-lg hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform text-white">
+      <h3 class="font-bold text-yellow-300 text-xl mb-2">Website Toko Online</h3>
+      <p class="text-lg font-semibold mb-4">Start From: Rp 3.000.000,-</p>
+      <ul class="list-disc pl-5 mb-4 space-y-1">
+        <li>5 Halaman Awal</li>
+        <li>Free Hosting & Domain</li>
+        <li>Free Setup 5 Produk</li>
+        <li>Desain Responsive</li>
+        <li>Fitur payment dan Shipping</li>
+        <li>Free 1x Revisi Desain</li>
+        <li>Free Setup 3 Slider</li>
+        <li>Dukungan Yoast SEO</li>
+        <li>Pengerjaan Estimasi 15 Hari Kerja</li>
+      </ul>
+      <a href="https://wa.me/6289515007825" target="_blank" class="bg-black hover:bg-green-600 block text-center py-2 rounded-lg font-semibold transition">Pesan Sekarang</a>
+    </div>
+
+    <!-- Website dan Aplikasi Custom -->
+    <div class="relative p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow-lg hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform text-white">
+      <h3 class="font-bold text-yellow-300 text-xl mb-2">Website dan Aplikasi Custom</h3>
+      <p class="text-lg font-semibold mb-4">Start From: Rp 5.000.000,-</p>
+      <ul class="list-disc pl-5 mb-4 space-y-1">
+        <li>Custom Desain Premium</li>
+        <li>Kebutuhan Integrasi API</li>
+        <li>Free Hosting & Domain</li>
+        <li>Desain Responsive</li>
+        <li>CMS</li>
+        <li>Framework</li>
+        <li>Bahasa Pemrograman Pilihan</li>
+        <li>Dukungan Yoast SEO</li>
+        <li>Koneksi E-Commerce</li>
+        <li>Integrasi metode pembayaran khusus</li>
+      </ul>
+      <a href="https://wa.me/6289515007825" target="_blank" class="bg-black hover:bg-green-600 block text-center py-2 rounded-lg font-semibold transition">Pesan Sekarang</a>
+    </div>
+
+    <!-- Jasa Upload Website -->
+    <div class="relative p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow-lg hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform text-white">
+      <h3 class="font-bold text-yellow-300 text-xl mb-2">Jasa Upload Website</h3>
+      <!--<p class="text-lg font-semibold mb-4">Start From: Rp 5.000.000,-</p>-->
+      <ul class="list-disc pl-5 mb-4 space-y-1">
+        <li>Domain dan Hosting (.Com) 1 Tahun</li>
+      <p class="pl-5 mb-4 font-semibold space-y-1">Start From: Rp 530.000,-</p> 
+        <li>Tanpa Domain</li>
+      <p class="pl-5 mb-4 font-semibold space-y-1">Start From: Rp 175.000,-</p> 
+        <li>Domain Pribadi</li>
+      <p class="pl-5 mb-4 font-semibold space-y-1">Start From: Rp 275.000,-</p> 
+      </ul>
+      <a href="https://wa.me/6289515007825" target="_blank" class="bg-black hover:bg-green-600 block text-center py-2 rounded-lg font-semibold transition">Pesan Sekarang</a>
+    </div>
+
+    <!-- Jasa Revisi Website dan Aplikasi -->
+    <div class="relative p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow-lg hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform text-white">
+      <h3 class="font-bold text-yellow-300 text-xl mb-2">Jasa Revisi Website dan Aplikasi</h3>
+      <p class="text-lg font-semibold mb-4">Start From: Rp 1.500.000,-</p>
+      <a href="https://wa.me/6289515007825" target="_blank" class="bg-black hover:bg-green-600 block text-center py-2 rounded-lg font-semibold transition">Pesan Sekarang</a>
+    </div>
+    
+  </div>
+</section>
+
+  <!-- WhatsApp Floating Button with WhatsApp Logo -->
+<a href="https://wa.me/6289515007825" target="_blank"
+   class="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 flex items-center justify-center">
+  <!-- WhatsApp Logo SVG -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 32 32">
+    <path d="M16 .396C7.176.396 0 7.572 0 16.396c0 2.885.76 5.701 2.199 8.182L.104 31.604l7.24-2.055a15.856 15.856 0 0 0 8.656 2.513c8.824 0 16-7.176 16-16.001S24.824.396 16 .396zm0 29.19c-2.715 0-5.366-.747-7.666-2.162l-.547-.327-4.297 1.219 1.209-4.184-.356-.567a13.055 13.055 0 0 1-2.015-7.07c0-7.222 5.878-13.1 13.1-13.1 7.223 0 13.101 5.878 13.101 13.1 0 7.222-5.878 13.1-13.101 13.1zm7.153-9.474c-.396-.198-2.344-1.157-2.709-1.291-.365-.134-.631-.198-.896.199s-1.027 1.291-1.26 1.556c-.229.26-.458.294-.854.098-.396-.198-1.672-.616-3.184-1.964-1.176-1.049-1.975-2.344-2.208-2.74-.229-.396-.025-.61.174-.807.179-.178.396-.463.595-.694.198-.229.264-.396.396-.66.134-.26.066-.495-.033-.694-.1-.198-.896-2.156-1.229-2.952-.324-.781-.656-.676-.896-.686-.229-.01-.495-.012-.76-.012s-.694.1-1.057.495c-.365.396-1.396 1.364-1.396 3.326s1.43 3.857 1.63 4.125c.198.26 2.816 4.293 6.827 6.021.955.412 1.7.657 2.279.841.957.305 1.827.262 2.514.159.767-.114 2.344-.957 2.676-1.882.33-.924.33-1.717.229-1.882-.1-.165-.365-.263-.76-.462z"/>
+  </svg>
+</a>
+
+  <!-- Testimoni Section -->
+<section id="testimoni" class="bg-gray-100 py-16 px-6">
+  <h2 class="text-3xl font-bold text-center mb-12">Testimoni Klien</h2>
+  <div class="max-w-7xl mx-auto">
+    <div class="swiper w-full max-w-5xl mx-auto px-4">
+      <div class="swiper-wrapper">
+
+        <!-- Testimonial 1 -->
+        <div class="swiper-slide text-center p-6">
+          <div class="bg-blue-100 p-8 rounded-xl shadow-lg max-w-md mx-auto">
+            <p class="text-lg text-black/80 mb-4">"Bangcoding sangat membantu kami dalam membuat website yang profesional dan responsif. Prosesnya cepat dan sangat efisien!"</p>
+            <div class="flex justify-center text-2xl mb-4">
+              <span class="text-yellow-500">★</span>
+              <span class="text-yellow-500">★</span>
+              <span class="text-yellow-500">★</span>
+              <span class="text-yellow-500">★</span>
+              <span class="text-gray-300">★</span>
+            </div>
+            <p class="font-semibold text-xl text-black">Rina, Pemilik Toko Online</p>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="swiper-slide text-center p-6">
+          <div class="bg-green-100 p-8 rounded-xl shadow-lg max-w-md mx-auto">
+            <p class="text-lg text-black/80 mb-4">"Layanan konsultasi gratis mereka sangat berguna, dan website yang saya dapatkan sesuai dengan harapan saya. Saya sangat merekomendasikan Bangcoding!"</p>
+            <div class="flex justify-center text-2xl mb-4">
+              <span class="text-yellow-500">★</span>
+              <span class="text-yellow-500">★</span>
+              <span class="text-yellow-500">★</span>
+              <span class="text-yellow-500">★</span>
+              <span class="text-yellow-500">★</span>
+            </div>
+            <p class="font-semibold text-xl text-black">Andi, Freelancer Desain</p>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="swiper-slide text-center p-6">
+          <div class="bg-yellow-100 p-8 rounded-xl shadow-lg max-w-md mx-auto">
+            <p class="text-lg text-black/80 mb-4">"Pembuatan website saya sangat cepat, tampilan modern, dan harga yang terjangkau. Saya benar-benar puas dengan hasilnya!"</p>
+            <div class="flex justify-center text-2xl mb-4">
+              <span class="text-yellow-500">★</span>
+              <span class="text-yellow-500">★</span>
+              <span class="text-yellow-500">★</span>
+              <span class="text-gray-300">★</span>
+              <span class="text-gray-300">★</span>
+            </div>
+            <p class="font-semibold text-xl text-black">Dina, Pengusaha Restoran</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination mt-4"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Swiper Initialization -->
+<script>
+  const swiperTestimonial = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 1,
+      },
+      1024: {
+        slidesPerView: 2,
+      },
+    },
+  });
+</script>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center py-8 mt-10">
+    <p>&copy; 2025 Bangcoding.id. Semua Hak Dilindungi.</p>
+    <p>Fee Konsultasi Via WhatsApp: 0895-1500-7825</p>
+  </footer>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: { el: '.swiper-pagination', clickable: true },
+    });
+  </script>
+</body>
+</html>
