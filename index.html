@@ -1,39 +1,65 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bangcoding.id</title>
   <script src="https://cdn.tailwindcss.com"></script>
 
 <!--Perintah Logo Bangcoding Berputar-->
   <style>
-  @keyframes spin-hover {
-    from { transform: rotate(0deg) scale(1); }
-    to { transform: rotate(360deg) scale(1.1); }
-  }
-  .hover\:spin-hover:hover {
-    animation: spin-hover 2s linear infinite;
-  }
-</style>
-
+    @keyframes spin-hover {
+      from { transform: rotate(0deg) scale(1); }
+      to { transform: rotate(360deg) scale(1.1); }
+    }
+    .hover\:spin-hover:hover {
+      animation: spin-hover 2s linear infinite;
+    }
+  </style>
 </head>
 <body class="bg-gray-100">
 
-  <!-- Sticky Header -->
-  <header class="sticky top-0 z-50 bg-gradient-to-r from-violet-800 via-indigo-900 to-blue-900 text-white backdrop-blur-md p-6 shadow-lg">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
+  <!-- Sticky Responsive Header -->
+  <header class="sticky top-0 z-50 bg-gradient-to-r from-violet-800 via-indigo-900 to-blue-900 text-white backdrop-blur-md shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo -->
       <h1 class="text-xl font-bold">Bangcoding.id</h1>
-      <nav class="space-x-4">
+
+      <!-- Hamburger Icon (mobile only) -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- Menu (desktop only) -->
+      <nav class="hidden md:flex space-x-4">
         <a href="#beranda" class="hover:underline">Beranda</a>
         <a href="#bahasapemrograman" class="hover:underline">Bahasa Pemrograman</a>
         <a href="#pricelist" class="hover:underline">Pricelist</a>
         <a href="#portofolio" class="hover:underline">Portofolio</a>
         <a href="#testimoni" class="hover:underline">Testimoni</a>
-        <!--<a href="#freekonsultasi" class="hover:underline">Free Konsultasi</a>-->
       </nav>
     </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2">
+      <a href="#beranda" class="block hover:underline">Beranda</a>
+      <a href="#bahasapemrograman" class="block hover:underline">Bahasa Pemrograman</a>
+      <a href="#pricelist" class="block hover:underline">Pricelist</a>
+      <a href="#portofolio" class="block hover:underline">Portofolio</a>
+      <a href="#testimoni" class="block hover:underline">Testimoni</a>
+    </div>
   </header>
+
+  <script>
+    // Toggle mobile menu
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
 
 <!-- Hero Section -->
 <section id="beranda" class="py-16 bg-gray-100 via-gray-100 to-gray-100">
