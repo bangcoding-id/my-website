@@ -104,7 +104,7 @@
 
       <!-- Judul & Deskripsi Halaman 1 -->
       <h1 class="text-4xl md:text-5xl font-bold leading-tight">
-        Bangcoding, You're IT Partner, Help, Support and Service
+        Jasa Pembuatan Website Profesional & SEO Friendly
       </h1>
       <p class="text-black-800">
         Solusi Jasa Ahli IT untuk semua kebutuhan bisnis dan pribadi anda, build your digital life and business with us
@@ -171,65 +171,59 @@
  <!-- Halaman Portofolio -->
 <section id="portofolio" class="bg-gray-100 py-16 px-6">
   <h2 class="text-3xl font-bold text-center mb-12">Portofolio</h2>
+
   <div class="max-w-7xl mx-auto">
-    <div class="swiper w-full max-w-5xl mx-auto px-4">
+    <div class="swiper swiper-portfolio w-full max-w-5xl mx-auto px-4">
+
       <!-- Wrapper -->
       <div class="swiper-wrapper">
 
-        <!-- Slide 1 -->
         <div class="swiper-slide text-center p-6">
-          <img 
-            src="Gambarportofolio/portofolio1.jpeg"
-            alt="Website Dietela"
-            class="mx-auto rounded-xl object-cover w-[300px] h-[200px] sm:w-[400px] sm:h-[250px] md:w-[500px] md:h-[300px]">
+          <img src="Gambarportofolio/portofolio1.jpeg"
+               alt="Website Dietela"
+               loading="lazy"
+               class="mx-auto rounded-xl object-cover w-[300px] h-[200px] sm:w-[400px] sm:h-[250px] md:w-[500px] md:h-[300px]">
         </div>
 
-        <!-- Slide 2 -->
         <div class="swiper-slide text-center p-6">
-          <img 
-            src="Gambarportofolio/portofolio2.jpeg"
-            alt="Website Sekolahdesain"
-            class="mx-auto rounded-xl object-cover w-[300px] h-[200px] sm:w-[400px] sm:h-[250px] md:w-[500px] md:h-[300px]">
+          <img src="Gambarportofolio/portofolio2.jpeg"
+               alt="Website Sekolah Desain"
+               loading="lazy"
+               class="mx-auto rounded-xl object-cover w-[300px] h-[200px] sm:w-[400px] sm:h-[250px] md:w-[500px] md:h-[300px]">
         </div>
 
-        <!-- Slide 3 -->
         <div class="swiper-slide text-center p-6">
-          <img 
-            src="Gambarportofolio/portofolio3.jpeg"
-            alt="Website Survey"
-            class="mx-auto rounded-xl object-cover w-[300px] h-[200px] sm:w-[400px] sm:h-[250px] md:w-[500px] md:h-[300px]">
+          <img src="Gambarportofolio/portofolio3.jpeg"
+               alt="Website Survey"
+               loading="lazy"
+               class="mx-auto rounded-xl object-cover w-[300px] h-[200px] sm:w-[400px] sm:h-[250px] md:w-[500px] md:h-[300px]">
         </div>
 
-        <!-- Slide 4 -->
         <div class="swiper-slide text-center p-6">
-          <img 
-            src="Gambarportofolio/portofolio4.jpeg"
-            alt="Portofolio Website Profesional Bangcoding"
-            class="mx-auto rounded-xl object-cover w-[300px] h-[200px] sm:w-[400px] sm:h-[250px] md:w-[500px] md:h-[300px]">
+          <img src="Gambarportofolio/portofolio4.jpeg"
+               alt="Portofolio Website Profesional Bangcoding"
+               loading="lazy"
+               class="mx-auto rounded-xl object-cover w-[300px] h-[200px] sm:w-[400px] sm:h-[250px] md:w-[500px] md:h-[300px]">
         </div>
 
-        <!-- Slide 5 -->
         <div class="swiper-slide text-center p-6">
-          <img 
-            src="Gambarportofolio/portofolio5.jpeg"
-            alt="Website Aksela"
-            class="mx-auto rounded-xl object-cover w-[300px] h-[200px] sm:w-[400px] sm:h-[250px] md:w-[500px] md:h-[300px]">
+          <img src="Gambarportofolio/portofolio5.jpeg"
+               alt="Website Aksela"
+               loading="lazy"
+               class="mx-auto rounded-xl object-cover w-[300px] h-[200px] sm:w-[400px] sm:h-[250px] md:w-[500px] md:h-[300px]">
         </div>
 
-        <!-- Slide 6 -->
         <div class="swiper-slide text-center p-6">
-          <img 
-            src="Gambarportofolio/portofolio6.jpeg"
-            alt="Website Creativa"
-            class="mx-auto rounded-xl object-cover w-[300px] h-[200px] sm:w-[400px] sm:h-[250px] md:w-[500px] md:h-[300px]">
+          <img src="Gambarportofolio/portofolio6.jpeg"
+               alt="Website Creativa"
+               loading="lazy"
+               class="mx-auto rounded-xl object-cover w-[300px] h-[200px] sm:w-[400px] sm:h-[250px] md:w-[500px] md:h-[300px]">
         </div>
 
       </div>
 
-      <!-- Pagination -->
-      <div class="swiper-pagination mt-4"></div>
-
-      <!-- Navigation Buttons -->
+      <!-- Pagination & Navigation -->
+      <div class="swiper-pagination"></div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
 
@@ -576,24 +570,24 @@
 
 <!-- Swiper Initialization -->
 <script>
-  const swiperTestimonial = new Swiper('.swiper', {
+  new Swiper('.swiper-portfolio', {
     loop: true,
     autoplay: {
-      delay: 4000,
+      delay: 3000,
       disableOnInteraction: false,
     },
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-portfolio .swiper-pagination',
       clickable: true,
     },
+    navigation: {
+      nextEl: '.swiper-portfolio .swiper-button-next',
+      prevEl: '.swiper-portfolio .swiper-button-prev',
+    },
+    slidesPerView: 1,
+    spaceBetween: 20,
     breakpoints: {
-      640: {
-        slidesPerView: 1,
-      },
       768: {
-        slidesPerView: 1,
-      },
-      1024: {
         slidesPerView: 2,
       },
     },
@@ -624,5 +618,3 @@
   </script>
 </body>
 </html>
-
-
