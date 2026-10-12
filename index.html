@@ -1,3 +1,4 @@
+<!--UPDATE TERBARU CODE TANGGAL 12 OKTOBER 2026-->
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -29,6 +30,14 @@
       animation: spin-hover 2s linear infinite;
     }
   </style>
+
+  <!--Font-->
+  <style>
+  /* Font Nunito untuk seluruh website */
+  body {
+    font-family: 'Nunito', sans-serif;
+  }
+</style>
 </head>
 
 <!--SCHEMA SEO-->
@@ -65,8 +74,9 @@
       <!-- Menu (desktop only) -->
       <nav class="hidden md:flex space-x-4">
         <a href="#beranda" class="hover:underline">Beranda</a>
-        <a href="#bahasapemrograman" class="hover:underline">Bahasa Pemrograman</a>
-        <a href="#pricelist" class="hover:underline">Pricelist</a>
+        <!--<a href="#bahasapemrograman" class="hover:underline">Bahasa Pemrograman</a>-->
+        <a href="#pricelistwebsite" class="hover:underline">Pricelist Website</a>
+        <a href="#pricelistbimbingan" class="hover:underline">Pricelist Bimbingan</a>
         <a href="#portofolio" class="hover:underline">Portofolio</a>
         <a href="#klien" class="hover:underline">Klien</a>
         <a href="#testimoni" class="hover:underline">Testimoni</a>
@@ -76,8 +86,9 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2">
       <a href="#beranda" class="block hover:underline">Beranda</a>
-      <a href="#bahasapemrograman" class="block hover:underline">Bahasa Pemrograman</a>
-      <a href="#pricelist" class="block hover:underline">Pricelist</a>
+      <!--<a href="#bahasapemrograman" class="block hover:underline">Bahasa Pemrograman</a>-->
+      <a href="#pricelistwebsite" class="block hover:underline">Pricelist Website</a>
+      <a href="#pricelistbimbingan" class="block hover:underline">Pricelist Bimbingan</a>
       <a href="#portofolio" class="block hover:underline">Portofolio</a>
       <a href="#klien" class="block hover:underline">Klien</a>
       <a href="#testimoni" class="block hover:underline">Testimoni</a>
@@ -92,83 +103,201 @@
     });
   </script>
 
+<!-- Import Font Nunito -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 <!-- Hero Section -->
-<section id="beranda" class="py-16 bg-gray-100 via-gray-100 to-gray-100">
+<section id="beranda"
+  class="py-16 bg-gray-100 via-gray-100 to-gray-100"
+  style="font-family: 'Nunito', sans-serif;">
+
   <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
 
-    <!-- Membuat Posisi Logo Bangcoding Menjadi Rata Kiri -->
+    <!-- Logo Bangcoding -->
     <div class="md:w-1/2 space-y-10 text-left relative">
 
-      <!-- Logo Bangcoding -->
       <div class="mb-6">
-        <img src="Gambar/bangcodinglogo.png" alt="Logo Bangcoding" class="h-20 md:h-24 w-auto hover:spin-hover transition-transform">
+        <img src="Gambar/bangcodinglogo.png"
+          alt="Logo Bangcoding"
+          class="h-20 md:h-24 w-auto hover:spin-hover transition-transform">
       </div>
 
-      <!-- Judul & Deskripsi Halaman 1 -->
-      <h1 class="text-4xl md:text-5xl font-bold leading-tight">
-        Jasa Pembuatan Website Profesional & SEO Friendly
+      <!-- Judul -->
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight text-black">
+        Jasa & Bimbingan Pembuatan Website dan SEO Friendly
       </h1>
-      <p class="text-black-800">
-        Solusi Jasa Ahli IT untuk semua kebutuhan bisnis dan pribadi anda, build your digital life and business with us
+
+      <!-- Deskripsi -->
+      <p class="text-gray-800 text-base md:text-lg font-medium leading-relaxed">
+        Solusi Digital dan Bimbingan IT untuk kebutuhan bisnis maupun pribadi,
+        dari tingkat pemula hingga profesional. Kami membantu Anda
+        mengembangkan keterampilan teknologi, menyelesaikan berbagai
+        kebutuhan IT, serta membangun dan mengembangkan bisnis di era digital.
       </p>
 
       <!-- Tombol Konsultasi Gratis -->
-      <a href="https://wa.me/6281332989546" target="_blank"
-         class="inline-block bg-gradient-to-r from-violet-800 via-indigo-900 to-blue-900 text-white py-3 px-6 transition-all duration-500 hover:from-purple-700 hover:via-indigo-700 hover:to-blue-700 rounded-xl">
+      <a href="https://wa.me/6281332989546"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block bg-gradient-to-r from-violet-800 via-indigo-900 to-blue-900
+        text-white font-bold py-3 px-6 transition-all duration-500
+        hover:from-purple-700 hover:via-indigo-700 hover:to-blue-700 rounded-xl">
         Konsultasi Gratis
       </a>
+
     </div>
 
-    <!-- Gambar Programer Sebelah Kanan -->
+    <!-- Gambar Programmer: Tetap Sama -->
     <div class="md:w-1/2 mt-10 md:mt-0">
       <img src="Gambar/gambar3.png"
-       width="600" height="200" alt="Jasa Pembuatan Website"
-       class="mx-auto transition-transform duration-500 hover:scale-105">
+        width="600"
+        height="200"
+        alt="Jasa Pembuatan Website"
+        class="mx-auto transition-transform duration-500 hover:scale-105">
     </div>
 
   </div>
 </section>
 
+<!-- ===== SECTION BAHASA PEMROGRAMAN ===== -->
+<section id="bahasapemrograman"
+  class="bg-white py-16 md:py-20 px-6"
+  style="font-family: 'Nunito', sans-serif;">
 
-  <!-- Bagian Jenis Bahasa Pemrograman -->
-<section id="bahasapemrograman" class="bg-gray-200 py-16 px-4 md:px-10 text-black">
-  <div class="container mx-auto flex flex-col md:flex-row gap-10 items-start">
-    
- <!-- Left Accordion Buttons-->
-<div class="md:w-1/2 space-y-4 w-full md:order-1">
-  <button class="w-full transform hover:scale-105 transition-transform duration-300 flex justify-between items-center bg-gradient-to-r from-purple-900 via-purple-700 to-blue-900 text-white border-none rounded-full px-6 py-3 text-left font-semibold shadow-sm focus:outline-none">
-    Dart (Flutter), CI 3/4, PHP (Laravel, WordPress), Pascal (Delphi, Lazarus)
-    <span class="text-xs">⬤</span>
-  </button>
+  <div class="max-w-6xl mx-auto">
 
-  <button class="w-full transform hover:scale-105 transition-transform duration-300 flex justify-between items-center bg-gradient-to-r from-purple-900 via-purple-700 to-blue-900 text-white border-none rounded-full px-6 py-3 text-left font-semibold shadow-sm focus:outline-none">
-    Javascript dan Kotlin (Node.js, Vue.js, Nuxt.js, ReactJS, Android Studio, Bootstrap, React Native, Electron JS, Express.js, Sequelize)
-    <span class="text-xs">⬤</span>
-  </button>
-
-  <button class="w-full transform hover:scale-105 transition-transform duration-300 flex justify-between items-center bg-gradient-to-r from-purple-900 via-purple-700 to-blue-900 text-white border-none rounded-full px-6 py-3 text-left font-semibold shadow-sm focus:outline-none">
-    XML (Extensible Markup Language): Kotlin + XML, Java + XML, C, C#
-    <span class="text-xs">⬤</span>
-  </button>
-
-  <button class="w-full transform hover:scale-105 transition-transform duration-300 flex justify-between items-center bg-gradient-to-r from-purple-900 via-purple-700 to-blue-900 text-white border-none rounded-full px-6 py-3 text-left font-semibold shadow-sm focus:outline-none">
-    HTML (Bootstrap, Electron JS), Typescript, Python, CSS (Bootstrap, Tailwind CSS, Electron JS)
-    <span class="text-xs">⬤</span>
-  </button>
-</div>
-
-    <!-- Right Text (Bahasa Pemrograman Yang Dipakai)-->
-    <div class="md:w-1/2 space-y-4 md:order-2">
-      <h2 class="text-3xl md:text-4xl font-bold leading-snug">
-        Bahasa Pemrograman <br /> Yang Kami Pakai
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-black mb-4 tracking-tight">
+        Bahasa Pemrograman yang Kami Pakai
       </h2>
-      <p class="text-black-800">
-        Dengan bahasa pemrograman, kamu bisa menjadi bagian dari revolusi teknologi, dan menciptakan masa depan yang lebih baik.
-      </p>
+
+      <div class="w-20 h-1 mx-auto rounded-full bg-purple-700"></div>
     </div>
-    
+
+    <!-- Grid Teknologi -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- Card 1 -->
+      <div class="group rounded-2xl p-6 md:p-7 text-white
+                  bg-gradient-to-br from-purple-950 via-purple-800 to-indigo-900
+                  shadow-lg hover:shadow-xl hover:-translate-y-1
+                  transition-all duration-300">
+
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-12 h-12 flex items-center justify-center
+                      rounded-xl bg-white/15 text-white text-xl font-extrabold">
+            &lt;/&gt;
+          </div>
+          <div>
+            <h3 class="text-lg font-extrabold">Web Development</h3>
+            <p class="text-sm text-purple-200 font-medium">Website & Backend</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">PHP</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">Laravel</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">CodeIgniter 3/4</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">WordPress</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">HTML</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">CSS</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">JavaScript</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">TypeScript</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="group rounded-2xl p-6 md:p-7 text-white
+                  bg-gradient-to-br from-purple-950 via-purple-800 to-indigo-900
+                  shadow-lg hover:shadow-xl hover:-translate-y-1
+                  transition-all duration-300">
+
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-12 h-12 flex items-center justify-center
+                      rounded-xl bg-white/15 text-white text-xl font-extrabold">
+            { }
+          </div>
+          <div>
+            <h3 class="text-lg font-extrabold">Framework & Libraries</h3>
+            <p class="text-sm text-purple-200 font-medium">Modern Web Technologies</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">React.js</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">Vue.js</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">Nuxt.js</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">Node.js</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">Express.js</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">Bootstrap</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">Tailwind CSS</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">Sequelize</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">Electron.js</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="group rounded-2xl p-6 md:p-7 text-white
+                  bg-gradient-to-br from-purple-950 via-purple-800 to-indigo-900
+                  shadow-lg hover:shadow-xl hover:-translate-y-1
+                  transition-all duration-300">
+
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-12 h-12 flex items-center justify-center
+                      rounded-xl bg-white/15 text-white text-xl font-extrabold">
+            ▣
+          </div>
+          <div>
+            <h3 class="text-lg font-extrabold">Mobile Development</h3>
+            <p class="text-sm text-purple-200 font-medium">Android & Cross-platform</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">Dart</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">Flutter</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">Kotlin</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">Java</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">Android Studio</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">React Native</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">XML</span>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="group rounded-2xl p-6 md:p-7 text-white
+                  bg-gradient-to-br from-purple-950 via-purple-800 to-indigo-900
+                  shadow-lg hover:shadow-xl hover:-translate-y-1
+                  transition-all duration-300">
+
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-12 h-12 flex items-center justify-center
+                      rounded-xl bg-white/15 text-white text-xl font-extrabold">
+            { }
+          </div>
+          <div>
+            <h3 class="text-lg font-extrabold">Desktop & Programming</h3>
+            <p class="text-sm text-purple-200 font-medium">Desktop Apps & Languages</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">Python</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">C</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">C#</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">Pascal</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">Delphi</span>
+          <span class="px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-sm font-semibold">Lazarus</span>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
+<!-- ===== END SECTION BAHASA PEMROGRAMAN ===== -->
 
  <!-- Halaman Portofolio -->
 <section id="portofolio" class="bg-gray-100 py-16 px-6">
@@ -201,21 +330,21 @@
       </div>
 
       <div class="swiper-slide text-center p-6">
-        <img src="Gambarportofolio/portofolioruby.JPG"
+        <img src="Gambarportofolio/portofolioruby.jpg"
           alt="Website survey online hasil jasa pembuatan website Bangcoding"
           loading="lazy"
           class="mx-auto rounded-xl object-cover w-[500px] h-[300px]">
       </div>
 
       <div class="swiper-slide text-center p-6">
-        <img src="Gambarportofolio/peta.JPG"
+        <img src="Gambarportofolio/peta.jpg"
           alt="Website survey online hasil jasa pembuatan website Bangcoding"
           loading="lazy"
           class="mx-auto rounded-xl object-cover w-[500px] h-[300px]">
       </div>
 
       <div class="swiper-slide text-center p-6">
-        <img src="Gambarportofolio/bejanaria.JPG"
+        <img src="Gambarportofolio/bejanaria.jpg"
           alt="Website survey online hasil jasa pembuatan website Bangcoding"
           loading="lazy"
           class="mx-auto rounded-xl object-cover w-[500px] h-[300px]">
@@ -265,230 +394,1065 @@
   });
 </script>
 
-<!-- Keuntungan Memakai Jasa Kami -->
-<section id="keuntungan" class="bg-gray-200 py-16 px-6 text-black">
-  <div class="max-w-7xl mx-auto text-center mb-12">
-    <h2 class="text-4xl font-bold mb-4">Keuntungan Memakai Jasa Kami</h2>
-    <p class="text-lg text-black/80">Kami memberikan solusi website terbaik untuk kebutuhan bisnis dan personal Anda.</p>
-  </div>
+<!-- ===== SECTION KEUNTUNGAN ===== -->
+<section id="keuntungan" class="relative bg-white py-20 px-6 overflow-hidden">
 
-  <!-- List Keuntungan -->
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
-    
-    <!-- Item -->
-    <div class="p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform">
-      <h3 class="text-xl font-semibold mb-2 text-white">Desain Profesional</h3>
-      <p class="text-white/80">
-        Tampilan modern, responsif, dan sesuai dengan identitas brand Anda.
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Section Header -->
+    <div class="text-center max-w-2xl mx-auto mb-14">
+
+      <h2 class="text-3xl md:text-4xl font-bold text-black mb-5">
+        Keuntungan Memakai Jasa Kami
+      </h2>
+
+      <div class="w-20 h-1 bg-purple-700 rounded-full mx-auto mb-5"></div>
+
+      <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+        Kami menghadirkan solusi digital yang profesional, berkualitas,
+        dan sesuai dengan kebutuhan bisnis maupun personal Anda.
       </p>
+
     </div>
 
-    <div class="p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform">
-      <h3 class="text-xl font-semibold mb-2 text-white">SEO Friendly</h3>
-      <p class="text-white/80">
-        Website Anda mudah ditemukan di Google karena struktur yang ramah mesin pencari.
-      </p>
-    </div>
+    <!-- Grid Keuntungan -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-    <div class="p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform">
-      <h3 class="text-xl font-semibold mb-2 text-white">Support & Maintenance</h3>
-      <p class="text-white/80">
-        Kami siap bantu jika ada kendala atau kebutuhan tambahan setelah website selesai.
-      </p>
-    </div>
+      <!-- Item 1 -->
+      <div class="group p-7 md:p-8 rounded-2xl bg-white
+                  border border-gray-200 shadow-sm
+                  hover:border-purple-300 hover:shadow-xl
+                  hover:-translate-y-1 transition-all duration-300">
 
-    <div class="p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform">
-      <h3 class="text-xl font-semibold mb-2 text-white">Waktu Pengerjaan Cepat</h3>
-      <p class="text-white/80">
-        Proses pembuatan yang efisien dan terjadwal, tanpa mengorbankan kualitas.
-      </p>
-    </div>
+        <div class="w-14 h-14 flex items-center justify-center
+                    rounded-2xl bg-purple-100 text-purple-800
+                    mb-6 group-hover:bg-purple-800
+                    group-hover:text-white transition-colors duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="28" height="28" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="1.8"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="3"/>
+            <path d="M3 9h18M9 21V9"/>
+          </svg>
+        </div>
 
-    <div class="p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform">
-      <h3 class="text-xl font-semibold mb-2 text-white">Harga Terjangkau</h3>
-      <p class="text-white/80">
-        Investasi yang sebanding dengan hasil, tanpa biaya tersembunyi.
-      </p>
-    </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">
+          Desain Profesional
+        </h3>
 
-    <div class="p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform">
-      <h3 class="text-xl font-semibold mb-2 text-white">Teknologi Terbaru</h3>
-      <p class="text-white/80">
-        Kami gunakan framework dan bahasa pemrograman modern yang powerful.
-      </p>
-    </div>
+        <p class="text-gray-600 leading-relaxed">
+          Tampilan website modern, responsif, dan menarik,
+          dirancang sesuai identitas serta kebutuhan brand Anda.
+        </p>
 
+      </div>
+
+      <!-- Item 2 -->
+      <div class="group p-7 md:p-8 rounded-2xl bg-white
+                  border border-gray-200 shadow-sm
+                  hover:border-purple-300 hover:shadow-xl
+                  hover:-translate-y-1 transition-all duration-300">
+
+        <div class="w-14 h-14 flex items-center justify-center
+                    rounded-2xl bg-purple-100 text-purple-800
+                    mb-6 group-hover:bg-purple-800
+                    group-hover:text-white transition-colors duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="28" height="28" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="1.8"
+               stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.35-4.35"/>
+            <path d="m8 11 2 2 4-4"/>
+          </svg>
+        </div>
+
+        <h3 class="text-xl font-bold text-gray-900 mb-3">
+          SEO Friendly
+        </h3>
+
+        <p class="text-gray-600 leading-relaxed">
+          Struktur website dirancang ramah mesin pencari untuk
+          membantu meningkatkan peluang ditemukan melalui Google.
+        </p>
+
+      </div>
+
+      <!-- Item 3 -->
+      <div class="group p-7 md:p-8 rounded-2xl bg-white
+                  border border-gray-200 shadow-sm
+                  hover:border-purple-300 hover:shadow-xl
+                  hover:-translate-y-1 transition-all duration-300">
+
+        <div class="w-14 h-14 flex items-center justify-center
+                    rounded-2xl bg-purple-100 text-purple-800
+                    mb-6 group-hover:bg-purple-800
+                    group-hover:text-white transition-colors duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="28" height="28" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="1.8"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 8v4l3 2"/>
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M8 2h8"/>
+          </svg>
+        </div>
+
+        <h3 class="text-xl font-bold text-gray-900 mb-3">
+          Support & Maintenance
+        </h3>
+
+        <p class="text-gray-600 leading-relaxed">
+          Dukungan teknis untuk membantu menangani kendala
+          dan kebutuhan pengembangan website sesuai kesepakatan.
+        </p>
+
+      </div>
+
+      <!-- Item 4 -->
+      <div class="group p-7 md:p-8 rounded-2xl bg-white
+                  border border-gray-200 shadow-sm
+                  hover:border-purple-300 hover:shadow-xl
+                  hover:-translate-y-1 transition-all duration-300">
+
+        <div class="w-14 h-14 flex items-center justify-center
+                    rounded-2xl bg-purple-100 text-purple-800
+                    mb-6 group-hover:bg-purple-800
+                    group-hover:text-white transition-colors duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="28" height="28" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="1.8"
+               stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M12 7v5l3 2"/>
+            <path d="m16 2 2 2-2 2"/>
+          </svg>
+        </div>
+
+        <h3 class="text-xl font-bold text-gray-900 mb-3">
+          Pengerjaan Terjadwal
+        </h3>
+
+        <p class="text-gray-600 leading-relaxed">
+          Proses pengerjaan terencana dengan estimasi waktu
+          yang jelas sesuai ruang lingkup dan kompleksitas project.
+        </p>
+
+      </div>
+
+      <!-- Item 5 -->
+      <div class="group p-7 md:p-8 rounded-2xl bg-white
+                  border border-gray-200 shadow-sm
+                  hover:border-purple-300 hover:shadow-xl
+                  hover:-translate-y-1 transition-all duration-300">
+
+        <div class="w-14 h-14 flex items-center justify-center
+                    rounded-2xl bg-purple-100 text-purple-800
+                    mb-6 group-hover:bg-purple-800
+                    group-hover:text-white transition-colors duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="28" height="28" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="1.8"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="5" width="20" height="14" rx="2"/>
+            <path d="M2 10h20"/>
+            <path d="M6 15h3"/>
+          </svg>
+        </div>
+
+        <h3 class="text-xl font-bold text-gray-900 mb-3">
+          Harga Transparan
+        </h3>
+
+        <p class="text-gray-600 leading-relaxed">
+          Pilihan layanan dan estimasi biaya disesuaikan dengan
+          kebutuhan project agar anggaran lebih terencana.
+        </p>
+
+      </div>
+
+      <!-- Item 6 -->
+      <div class="group p-7 md:p-8 rounded-2xl bg-white
+                  border border-gray-200 shadow-sm
+                  hover:border-purple-300 hover:shadow-xl
+                  hover:-translate-y-1 transition-all duration-300">
+
+        <div class="w-14 h-14 flex items-center justify-center
+                    rounded-2xl bg-purple-100 text-purple-800
+                    mb-6 group-hover:bg-purple-800
+                    group-hover:text-white transition-colors duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="28" height="28" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="1.8"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="m8 3-5 9h7l-1 9 12-12h-8l2-6z"/>
+          </svg>
+        </div>
+
+        <h3 class="text-xl font-bold text-gray-900 mb-3">
+          Teknologi Modern
+        </h3>
+
+        <p class="text-gray-600 leading-relaxed">
+          Memanfaatkan bahasa pemrograman, framework, dan teknologi
+          yang sesuai untuk membangun solusi digital yang efektif.
+        </p>
+
+      </div>
+    </div>
   </div>
 </section>
+<!-- ===== END SECTION KEUNTUNGAN ===== -->
 
 
-  <!-- Pricing Section -->
-<section id="pricelist" class="py-16 px-6 max-w-6xl mx-auto">
-  <h2 class="text-3xl font-bold text-center text-black mb-12">Pricelist Website</h2>
-  <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-    
+  <!-- Pricing Website Section -->
+<section id="pricelistwebsite" class="py-16 px-6 max-w-7xl mx-auto">
+
+  <!-- Section Header -->
+  <div class="text-center mb-12">
+
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      Pricelist Website
+    </h2>
+
+    <p class="text-gray-600 max-w-3xl mx-auto leading-relaxed">
+      Solusi pembuatan website profesional untuk kebutuhan pribadi,
+      bisnis, organisasi, hingga aplikasi custom. Dapatkan website
+      yang responsif, modern, dan siap mendukung kebutuhan digital Anda.
+    </p>
+  </div>
+
+  <!-- Website Pricing Grid -->
+  <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+
     <!-- Website Pribadi / Portofolio -->
-    <div class="relative p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow-lg hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform text-white">
-      <h3 class="font-bold text-yellow-300 text-xl mb-2">Website Pribadi / Portofolio</h3>
-      <p class="text-lg font-semibold mb-4">Start From: Rp 1.500.000,-</p>
-      <ul class="list-disc pl-5 mb-4 space-y-1">
-        <li>1 Halaman Awal</li>
-        <li>Free Hosting & Domain</li>
-        <li>Desain Responsive</li>
-        <li>Free 1x Revisi Konten</li>
-        <li>Free 1x Revisi Desain</li>
-        <li>Free SSL</li>
-        <li>Dukungan Yoast SEO</li>
-        <li>Pengerjaan Estimasi 7 Hari Kerja</li>
-      </ul>
-      <a href="https://wa.me/6281332989546" target="_blank" class="bg-black hover:bg-green-600 block text-center py-2 rounded-lg font-semibold transition">Pesan Sekarang</a>
+    <div class="flex flex-col p-6 bg-gradient-to-br from-purple-900 via-purple-800 to-blue-900 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-1 text-white">
+      <h3 class="text-lg md:text-xl font-bold text-yellow-300 mb-3">
+        Website Pribadi / Portofolio
+      </h3>
+
+      <p class="text-sm text-gray-200 mb-5">
+        Website personal untuk menampilkan profil, pengalaman, karya,
+        dan portofolio secara profesional.
+      </p>
+
+      <div class="mb-6">
+        <p class="text-sm text-gray-300 mb-1">Mulai dari</p>
+        <p class="text-2xl font-bold text-yellow-300">Rp 1.500.000</p>
+      </div>
+
+      <div class="border-t border-white/20 pt-5 mb-6 flex-grow">
+        <p class="font-semibold mb-4">Fitur Layanan</p>
+        <ul class="space-y-3 text-sm text-gray-100">
+          <li>✓ 1 halaman awal</li>
+          <li>✓ Hosting dan domain gratis</li>
+          <li>✓ Desain responsif</li>
+          <li>✓ 1x revisi konten</li>
+          <li>✓ 1x revisi desain</li>
+          <li>✓ SSL gratis</li>
+          <li>✓ Dukungan Yoast SEO</li>
+          <li>✓ Estimasi 7 hari kerja</li>
+        </ul>
+      </div>
+
+      <a href="https://wa.me/6281332989546?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20Website%20Pribadi%20atau%20Portofolio."
+         target="_blank" rel="noopener noreferrer"
+         class="block text-center bg-yellow-400 hover:bg-yellow-500 text-indigo-950 py-3 px-4 rounded-xl font-semibold transition duration-300">
+        Pesan Sekarang
+      </a>
     </div>
 
     <!-- Company Profile -->
-    <div class="relative p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow-lg hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform text-white">
-      <h3 class="font-bold text-yellow-300 text-xl mb-2">Website Company Profile</h3>
-      <p class="text-lg font-semibold mb-4">Start From: Rp 1.500.000,-</p>
-      <ul class="list-disc pl-5 mb-4 space-y-1">
-        <li>1 Halaman Awal</li>
-        <li>Free Hosting & Domain</li>
-        <li>Desain Responsive</li>
-        <li>Free 1x Revisi Konten</li>
-        <li>Free 1x Revisi Desain</li>
-        <li>Free SSL</li>
-        <li>Dukungan Yoast SEO</li>
-        <li>Pengerjaan Estimasi 7 Hari Kerja</li>
-      </ul>
-      <a href="https://wa.me/6281332989546" target="_blank" class="bg-black hover:bg-green-600 block text-center py-2 rounded-lg font-semibold transition">Pesan Sekarang</a>
+    <div class="flex flex-col p-6 bg-gradient-to-br from-purple-900 via-purple-800 to-blue-900 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-1 text-white">
+      <h3 class="text-lg md:text-xl font-bold text-yellow-300 mb-3">
+        Website Company Profile
+      </h3>
+
+      <p class="text-sm text-gray-200 mb-5">
+        Website profil perusahaan untuk meningkatkan kredibilitas
+        dan memperkenalkan layanan bisnis Anda.
+      </p>
+
+      <div class="mb-6">
+        <p class="text-sm text-gray-300 mb-1">Mulai dari</p>
+        <p class="text-2xl font-bold text-yellow-300">Rp 1.500.000</p>
+      </div>
+
+      <div class="border-t border-white/20 pt-5 mb-6 flex-grow">
+        <p class="font-semibold mb-4">Fitur Layanan</p>
+        <ul class="space-y-3 text-sm text-gray-100">
+          <li>✓ 1 halaman awal</li>
+          <li>✓ Hosting dan domain gratis</li>
+          <li>✓ Desain responsif</li>
+          <li>✓ 1x revisi konten</li>
+          <li>✓ 1x revisi desain</li>
+          <li>✓ SSL gratis</li>
+          <li>✓ Dukungan Yoast SEO</li>
+          <li>✓ Estimasi 7 hari kerja</li>
+        </ul>
+      </div>
+
+      <a href="https://wa.me/6281332989546?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20Website%20Company%20Profile."
+         target="_blank" rel="noopener noreferrer"
+         class="block text-center bg-yellow-400 hover:bg-yellow-500 text-indigo-950 py-3 px-4 rounded-xl font-semibold transition duration-300">
+        Pesan Sekarang
+      </a>
     </div>
 
-    <!-- Landing Page / Sales Page -->
-    <div class="relative p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow-lg hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform text-white">
-      <h3 class="font-bold text-yellow-300 text-xl mb-2">Website Landing Page / Sales Page</h3>
-      <p class="text-lg font-semibold mb-4">Start From: Rp 1.500.000,-</p>
-      <ul class="list-disc pl-5 mb-4 space-y-1">
-        <li>1 Halaman Awal</li>
-        <li>Free Hosting & Domain</li>
-        <li>Desain Responsive</li>
-        <li>Free 1x Revisi Konten</li>
-        <li>Free 1x Revisi Desain</li>
-        <li>Free SSL</li>
-        <li>Dukungan Yoast SEO</li>
-        <li>Pengerjaan Estimasi 7 Hari Kerja</li>
-      </ul>
-      <a href="https://wa.me/6281332989546" target="_blank" class="bg-black hover:bg-green-600 block text-center py-2 rounded-lg font-semibold transition">Pesan Sekarang</a>
+    <!-- Landing Page -->
+    <div class="flex flex-col p-6 bg-gradient-to-br from-purple-900 via-purple-800 to-blue-900 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-1 text-white">
+      <h3 class="text-lg md:text-xl font-bold text-yellow-300 mb-3">
+        Website Landing Page / Sales Page
+      </h3>
+
+      <p class="text-sm text-gray-200 mb-5">
+        Halaman promosi untuk memperkenalkan produk, menarik pelanggan,
+        dan mendukung pemasaran digital.
+      </p>
+
+      <div class="mb-6">
+        <p class="text-sm text-gray-300 mb-1">Mulai dari</p>
+        <p class="text-2xl font-bold text-yellow-300">Rp 1.500.000</p>
+      </div>
+
+      <div class="border-t border-white/20 pt-5 mb-6 flex-grow">
+        <p class="font-semibold mb-4">Fitur Layanan</p>
+        <ul class="space-y-3 text-sm text-gray-100">
+          <li>✓ 1 halaman awal</li>
+          <li>✓ Hosting dan domain gratis</li>
+          <li>✓ Desain responsif</li>
+          <li>✓ 1x revisi konten</li>
+          <li>✓ 1x revisi desain</li>
+          <li>✓ SSL gratis</li>
+          <li>✓ Dukungan Yoast SEO</li>
+          <li>✓ Estimasi 7 hari kerja</li>
+        </ul>
+      </div>
+
+      <a href="https://wa.me/6281332989546?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20Website%20Landing%20Page%20atau%20Sales%20Page."
+         target="_blank" rel="noopener noreferrer"
+         class="block text-center bg-yellow-400 hover:bg-yellow-500 text-indigo-950 py-3 px-4 rounded-xl font-semibold transition duration-300">
+        Pesan Sekarang
+      </a>
     </div>
 
     <!-- Blog / Media Online -->
-    <div class="relative p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow-lg hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform text-white">
-      <h3 class="font-bold text-yellow-300 text-xl mb-2">Blog / Media Online</h3>
-      <p class="text-lg font-semibold mb-4">Start From: Rp 1.500.000,-</p>
-      <ul class="list-disc pl-5 mb-4 space-y-1">
-        <li>1 Halaman Awal</li>
-        <li>Free Hosting & Domain</li>
-        <li>Desain Responsive</li>
-        <li>Free 1x Revisi Konten</li>
-        <li>Free 1x Revisi Desain</li>
-        <li>Free SSL</li>
-        <li>Dukungan Yoast SEO</li>
-        <li>Pengerjaan Estimasi 7 Hari Kerja</li>
-      </ul>
-      <a href="https://wa.me/6281332989546" target="_blank" class="bg-black hover:bg-green-600 block text-center py-2 rounded-lg font-semibold transition">Pesan Sekarang</a>
+    <div class="flex flex-col p-6 bg-gradient-to-br from-purple-900 via-purple-800 to-blue-900 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-1 text-white">
+      <h3 class="text-lg md:text-xl font-bold text-yellow-300 mb-3">
+        Blog / Media Online
+      </h3>
+
+      <p class="text-sm text-gray-200 mb-5">
+        Platform publikasi artikel, berita, informasi, dan konten
+        digital untuk menjangkau lebih banyak pembaca.
+      </p>
+
+      <div class="mb-6">
+        <p class="text-sm text-gray-300 mb-1">Mulai dari</p>
+        <p class="text-2xl font-bold text-yellow-300">Rp 1.500.000</p>
+      </div>
+
+      <div class="border-t border-white/20 pt-5 mb-6 flex-grow">
+        <p class="font-semibold mb-4">Fitur Layanan</p>
+        <ul class="space-y-3 text-sm text-gray-100">
+          <li>✓ 1 halaman awal</li>
+          <li>✓ Hosting dan domain gratis</li>
+          <li>✓ Desain responsif</li>
+          <li>✓ 1x revisi konten</li>
+          <li>✓ 1x revisi desain</li>
+          <li>✓ SSL gratis</li>
+          <li>✓ Dukungan Yoast SEO</li>
+          <li>✓ Estimasi 7 hari kerja</li>
+        </ul>
+      </div>
+
+      <a href="https://wa.me/6281332989546?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20Blog%20atau%20Media%20Online."
+         target="_blank" rel="noopener noreferrer"
+         class="block text-center bg-yellow-400 hover:bg-yellow-500 text-indigo-950 py-3 px-4 rounded-xl font-semibold transition duration-300">
+        Pesan Sekarang
+      </a>
     </div>
 
-    <!-- Website Bisnis UMKM -->
-    <div class="relative p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow-lg hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform text-white">
-      <h3 class="font-bold text-yellow-300 text-xl mb-2">Website Bisnis UMKM</h3>
-      <p class="text-lg font-semibold mb-4">Start From: Rp 2.000.000,-</p>
-      <ul class="list-disc pl-5 mb-4 space-y-1">
-        <li>1 Halaman Awal</li>
-        <li>Free Hosting & Domain</li>
-        <li>Desain Responsive</li>
-        <li>Free 1x Revisi Desain</li>
-        <li>Free 1x Revisi Konten</li>
-        <li>Free SSL</li>
-        <li>Dukungan Yoast SEO</li>
-        <li>Pengerjaan Estimasi 14 Hari Kerja</li>
-      </ul>
-      <a href="https://wa.me/6281332989546" target="_blank" class="bg-black hover:bg-green-600 block text-center py-2 rounded-lg font-semibold transition">Pesan Sekarang</a>
+    <!-- Website UMKM -->
+    <div class="flex flex-col p-6 bg-gradient-to-br from-purple-900 via-purple-800 to-blue-900 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-1 text-white">
+      <h3 class="text-lg md:text-xl font-bold text-yellow-300 mb-3">
+        Website Bisnis UMKM
+      </h3>
+
+      <p class="text-sm text-gray-200 mb-5">
+        Website untuk memperkenalkan produk, layanan, dan identitas
+        bisnis UMKM secara online.
+      </p>
+
+      <div class="mb-6">
+        <p class="text-sm text-gray-300 mb-1">Mulai dari</p>
+        <p class="text-2xl font-bold text-yellow-300">Rp 2.000.000</p>
+      </div>
+
+      <div class="border-t border-white/20 pt-5 mb-6 flex-grow">
+        <p class="font-semibold mb-4">Fitur Layanan</p>
+        <ul class="space-y-3 text-sm text-gray-100">
+          <li>✓ 1 halaman awal</li>
+          <li>✓ Hosting dan domain gratis</li>
+          <li>✓ Desain responsif</li>
+          <li>✓ 1x revisi desain</li>
+          <li>✓ 1x revisi konten</li>
+          <li>✓ SSL gratis</li>
+          <li>✓ Dukungan Yoast SEO</li>
+          <li>✓ Estimasi 14 hari kerja</li>
+        </ul>
+      </div>
+
+      <a href="https://wa.me/6281332989546?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20Website%20Bisnis%20UMKM."
+         target="_blank" rel="noopener noreferrer"
+         class="block text-center bg-yellow-400 hover:bg-yellow-500 text-indigo-950 py-3 px-4 rounded-xl font-semibold transition duration-300">
+        Pesan Sekarang
+      </a>
     </div>
 
-    <!-- Website Sekolah / Organisasi -->
-    <div class="relative p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow-lg hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform text-white">
-      <h3 class="font-bold text-yellow-300 text-xl mb-2">Website Sekolah / Organisasi</h3>
-      <p class="text-lg font-semibold mb-4">Start From: Rp 2.500.000,-</p>
-      <ul class="list-disc pl-5 mb-4 space-y-1">
-        <li>1 Halaman Awal</li>
-        <li>Free Hosting & Domain</li>
-        <li>Desain Responsive</li>
-        <li>Free 1x Revisi Desain</li>
-        <li>Free 1x Revisi Konten</li>
-        <li>Free SSL</li>
-        <li>Dukungan Yoast SEO</li>
-        <li>Pengerjaan Estimasi 15 Hari Kerja</li>
-      </ul>
-      <a href="https://wa.me/6281332989546" target="_blank" class="bg-black hover:bg-green-600 block text-center py-2 rounded-lg font-semibold transition">Pesan Sekarang</a>
+    <!-- Sekolah / Organisasi -->
+    <div class="flex flex-col p-6 bg-gradient-to-br from-purple-900 via-purple-800 to-blue-900 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-1 text-white">
+      <h3 class="text-lg md:text-xl font-bold text-yellow-300 mb-3">
+        Website Sekolah / Organisasi
+      </h3>
+
+      <p class="text-sm text-gray-200 mb-5">
+        Website informasi dan profil untuk sekolah, komunitas,
+        lembaga, maupun organisasi.
+      </p>
+
+      <div class="mb-6">
+        <p class="text-sm text-gray-300 mb-1">Mulai dari</p>
+        <p class="text-2xl font-bold text-yellow-300">Rp 2.500.000</p>
+      </div>
+
+      <div class="border-t border-white/20 pt-5 mb-6 flex-grow">
+        <p class="font-semibold mb-4">Fitur Layanan</p>
+        <ul class="space-y-3 text-sm text-gray-100">
+          <li>✓ 1 halaman awal</li>
+          <li>✓ Hosting dan domain gratis</li>
+          <li>✓ Desain responsif</li>
+          <li>✓ 1x revisi desain</li>
+          <li>✓ 1x revisi konten</li>
+          <li>✓ SSL gratis</li>
+          <li>✓ Dukungan Yoast SEO</li>
+          <li>✓ Estimasi 15 hari kerja</li>
+        </ul>
+      </div>
+
+      <a href="https://wa.me/6281332989546?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20Website%20Sekolah%20atau%20Organisasi."
+         target="_blank" rel="noopener noreferrer"
+         class="block text-center bg-yellow-400 hover:bg-yellow-500 text-indigo-950 py-3 px-4 rounded-xl font-semibold transition duration-300">
+        Pesan Sekarang
+      </a>
     </div>
 
-    <!-- Website Toko Online -->
-    <div class="relative p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow-lg hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform text-white">
-      <h3 class="font-bold text-yellow-300 text-xl mb-2">Website Toko Online</h3>
-      <p class="text-lg font-semibold mb-4">Start From: Rp 3.000.000,-</p>
-      <ul class="list-disc pl-5 mb-4 space-y-1">
-        <li>5 Halaman Awal</li>
-        <li>Free Hosting & Domain</li>
-        <li>Free Setup 5 Produk</li>
-        <li>Desain Responsive</li>
-        <li>Fitur payment dan Shipping</li>
-        <li>Free 1x Revisi Desain</li>
-        <li>Free Setup 3 Slider</li>
-        <li>Dukungan Yoast SEO</li>
-        <li>Pengerjaan Estimasi 15 Hari Kerja</li>
-      </ul>
-      <a href="https://wa.me/6281332989546" target="_blank" class="bg-black hover:bg-green-600 block text-center py-2 rounded-lg font-semibold transition">Pesan Sekarang</a>
+    <!-- Toko Online -->
+    <div class="flex flex-col p-6 bg-gradient-to-br from-purple-900 via-purple-800 to-blue-900 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-1 text-white">
+      <h3 class="text-lg md:text-xl font-bold text-yellow-300 mb-3">
+        Website Toko Online
+      </h3>
+
+      <p class="text-sm text-gray-200 mb-5">
+        Website e-commerce untuk memasarkan produk dan mendukung
+        transaksi penjualan secara online.
+      </p>
+
+      <div class="mb-6">
+        <p class="text-sm text-gray-300 mb-1">Mulai dari</p>
+        <p class="text-2xl font-bold text-yellow-300">Rp 3.000.000</p>
+      </div>
+
+      <div class="border-t border-white/20 pt-5 mb-6 flex-grow">
+        <p class="font-semibold mb-4">Fitur Layanan</p>
+        <ul class="space-y-3 text-sm text-gray-100">
+          <li>✓ 5 halaman awal</li>
+          <li>✓ Hosting dan domain gratis</li>
+          <li>✓ Setup 5 produk</li>
+          <li>✓ Desain responsif</li>
+          <li>✓ Fitur pembayaran dan pengiriman</li>
+          <li>✓ 1x revisi desain</li>
+          <li>✓ Setup 3 slider</li>
+          <li>✓ Dukungan Yoast SEO</li>
+          <li>✓ Estimasi 15 hari kerja</li>
+        </ul>
+      </div>
+
+      <a href="https://wa.me/6281332989546?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20Website%20Toko%20Online."
+         target="_blank" rel="noopener noreferrer"
+         class="block text-center bg-yellow-400 hover:bg-yellow-500 text-indigo-950 py-3 px-4 rounded-xl font-semibold transition duration-300">
+        Pesan Sekarang
+      </a>
     </div>
 
-    <!-- Website dan Aplikasi Custom -->
-    <div class="relative p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow-lg hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform text-white">
-      <h3 class="font-bold text-yellow-300 text-xl mb-2">Website dan Aplikasi Custom</h3>
-      <p class="text-lg font-semibold mb-4">Start From: Rp 5.000.000,-</p>
-      <ul class="list-disc pl-5 mb-4 space-y-1">
-        <li>Custom Desain Premium</li>
-        <li>Kebutuhan Integrasi API</li>
-        <li>Free Hosting & Domain</li>
-        <li>Desain Responsive</li>
-        <li>CMS</li>
-        <li>Framework</li>
-        <li>Bahasa Pemrograman Pilihan</li>
-        <li>Dukungan Yoast SEO</li>
-        <li>Koneksi E-Commerce</li>
-        <li>Integrasi metode pembayaran khusus</li>
-      </ul>
-      <a href="https://wa.me/6281332989546" target="_blank" class="bg-black hover:bg-green-600 block text-center py-2 rounded-lg font-semibold transition">Pesan Sekarang</a>
+    <!-- Website / Aplikasi Custom -->
+    <div class="flex flex-col p-6 bg-gradient-to-br from-purple-900 via-purple-800 to-blue-900 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-1 text-white">
+      <h3 class="text-lg md:text-xl font-bold text-yellow-300 mb-3">
+        Website dan Aplikasi Custom
+      </h3>
+
+      <p class="text-sm text-gray-200 mb-5">
+        Pengembangan website dan aplikasi sesuai kebutuhan bisnis,
+        sistem, serta fitur yang dirancang secara khusus.
+      </p>
+
+      <div class="mb-6">
+        <p class="text-sm text-gray-300 mb-1">Mulai dari</p>
+        <p class="text-2xl font-bold text-yellow-300">Rp 5.000.000</p>
+      </div>
+
+      <div class="border-t border-white/20 pt-5 mb-6 flex-grow">
+        <p class="font-semibold mb-4">Fitur Layanan</p>
+        <ul class="space-y-3 text-sm text-gray-100">
+          <li>✓ Desain custom premium</li>
+          <li>✓ Integrasi API sesuai kebutuhan</li>
+          <li>✓ Hosting dan domain</li>
+          <li>✓ Desain responsif</li>
+          <li>✓ Content Management System</li>
+          <li>✓ Framework sesuai project</li>
+          <li>✓ Bahasa pemrograman pilihan</li>
+          <li>✓ Dukungan SEO sesuai kebutuhan</li>
+          <li>✓ Integrasi e-commerce</li>
+          <li>✓ Integrasi metode pembayaran khusus</li>
+        </ul>
+      </div>
+
+      <a href="https://wa.me/6281332989546?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20Website%20dan%20Aplikasi%20Custom."
+         target="_blank" rel="noopener noreferrer"
+         class="block text-center bg-yellow-400 hover:bg-yellow-500 text-indigo-950 py-3 px-4 rounded-xl font-semibold transition duration-300">
+        Konsultasi Project
+      </a>
     </div>
 
-    <!-- Jasa Upload Website -->
-    <div class="relative p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow-lg hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform text-white">
-      <h3 class="font-bold text-yellow-300 text-xl mb-2">Jasa Upload Website</h3>
-      <!--<p class="text-lg font-semibold mb-4">Start From: Rp 5.000.000,-</p>-->
-      <ul class="list-disc pl-5 mb-4 space-y-1">
-        <li>Domain dan Hosting (.Com) 1 Tahun</li>
-      <p class="pl-5 mb-4 font-semibold space-y-1">Start From: Rp 530.000,-</p> 
-        <li>Tanpa Domain</li>
-      <p class="pl-5 mb-4 font-semibold space-y-1">Start From: Rp 175.000,-</p> 
-        <li>Domain Pribadi</li>
-      <p class="pl-5 mb-4 font-semibold space-y-1">Start From: Rp 275.000,-</p> 
-      </ul>
-      <a href="https://wa.me/6281332989546" target="_blank" class="bg-black hover:bg-green-600 block text-center py-2 rounded-lg font-semibold transition">Pesan Sekarang</a>
+    <!-- Upload Website -->
+    <div class="flex flex-col p-6 bg-gradient-to-br from-purple-900 via-purple-800 to-blue-900 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-1 text-white">
+      <h3 class="text-lg md:text-xl font-bold text-yellow-300 mb-3">
+        Jasa Upload Website
+      </h3>
+
+      <p class="text-sm text-gray-200 mb-5">
+        Bantuan publikasi website agar dapat diakses secara online
+        melalui domain dan hosting.
+      </p>
+
+      <div class="border-t border-white/20 pt-5 mb-6 flex-grow">
+        <p class="font-semibold mb-4">Pilihan Layanan</p>
+
+        <div class="space-y-4">
+          <div class="p-4 bg-white/10 rounded-xl">
+            <p class="text-sm text-gray-200 mb-1">
+              Domain .com dan hosting 1 tahun
+            </p>
+            <p class="text-xl font-bold text-yellow-300">
+              Rp 530.000
+            </p>
+          </div>
+
+          <div class="p-4 bg-white/10 rounded-xl">
+            <p class="text-sm text-gray-200 mb-1">
+              Upload tanpa domain
+            </p>
+            <p class="text-xl font-bold text-yellow-300">
+              Rp 175.000
+            </p>
+          </div>
+
+          <div class="p-4 bg-white/10 rounded-xl">
+            <p class="text-sm text-gray-200 mb-1">
+              Menggunakan domain pribadi
+            </p>
+            <p class="text-xl font-bold text-yellow-300">
+              Rp 275.000
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://wa.me/6281332989546?text=Halo%2C%20saya%20ingin%20menggunakan%20layanan%20Upload%20Website."
+         target="_blank" rel="noopener noreferrer"
+         class="block text-center bg-yellow-400 hover:bg-yellow-500 text-indigo-950 py-3 px-4 rounded-xl font-semibold transition duration-300">
+        Pesan Sekarang
+      </a>
     </div>
 
-    <!-- Jasa Revisi Website dan Aplikasi -->
-    <div class="relative p-6 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900 rounded-xl shadow-lg hover:shadow-2xl backdrop-blur-sm transition duration-300 hover:scale-105 transform text-white">
-      <h3 class="font-bold text-yellow-300 text-xl mb-2">Jasa Revisi Website dan Aplikasi</h3>
-      <p class="text-lg font-semibold mb-4">Start From: Rp 1.500.000,-</p>
-      <a href="https://wa.me/6281332989546" target="_blank" class="bg-black hover:bg-green-600 block text-center py-2 rounded-lg font-semibold transition">Pesan Sekarang</a>
+    <!-- Revisi Website / Aplikasi -->
+    <div class="flex flex-col p-6 bg-gradient-to-br from-purple-900 via-purple-800 to-blue-900 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-1 text-white">
+      <h3 class="text-lg md:text-xl font-bold text-yellow-300 mb-3">
+        Jasa Revisi Website dan Aplikasi
+      </h3>
+
+      <p class="text-sm text-gray-200 mb-5">
+        Perbaikan tampilan, penyesuaian fitur, debugging, dan
+        pengembangan website atau aplikasi yang sudah ada.
+      </p>
+
+      <div class="mb-6">
+        <p class="text-sm text-gray-300 mb-1">Mulai dari</p>
+        <p class="text-2xl font-bold text-yellow-300">Rp 1.500.000</p>
+      </div>
+
+      <div class="border-t border-white/20 pt-5 mb-6 flex-grow">
+        <p class="font-semibold mb-4">Layanan Revisi</p>
+        <ul class="space-y-3 text-sm text-gray-100">
+          <li>✓ Perbaikan tampilan website</li>
+          <li>✓ Penyesuaian fitur</li>
+          <li>✓ Perbaikan error</li>
+          <li>✓ Penyesuaian responsivitas</li>
+          <li>✓ Konsultasi kebutuhan revisi</li>
+          <li>✓ Estimasi harga sesuai ruang lingkup</li>
+        </ul>
+      </div>
+
+      <a href="https://wa.me/6281332989546?text=Halo%2C%20saya%20ingin%20konsultasi%20mengenai%20revisi%20website%20atau%20aplikasi."
+         target="_blank" rel="noopener noreferrer"
+         class="block text-center bg-yellow-400 hover:bg-yellow-500 text-indigo-950 py-3 px-4 rounded-xl font-semibold transition duration-300">
+        Konsultasi Revisi
+      </a>
     </div>
-    
   </div>
+</section>
+
+<!-- Pricelist Bimbingan IT Section -->
+<section id="pricelistbimbingan" class="py-16 px-6 max-w-7xl mx-auto">
+
+  <!-- Section Header -->
+  <div class="text-center mb-12">
+
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      Pricelist Bimbingan IT
+    </h2>
+
+    <p class="text-gray-600 max-w-3xl mx-auto leading-relaxed">
+      Tingkatkan keterampilan teknologi bersama tentor profesional melalui
+      bimbingan IT private, praktik langsung, dan konsultasi project sesuai
+      kebutuhan Anda, dari pemula hingga profesional.
+    </p>
+  </div>
+
+  <!-- Pricing Grid -->
+  <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+
+    <!-- Website Development -->
+    <div class="flex flex-col p-6 bg-gradient-to-br from-purple-900 via-purple-800 to-blue-900 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-1 text-white">
+      <h3 class="text-lg md:text-xl font-bold text-yellow-300 mb-3">
+        Website Development
+      </h3>
+
+      <p class="text-sm text-gray-200 leading-relaxed mb-5">
+        Bimbingan pembuatan website dari dasar hingga pengembangan website
+        profesional dan responsif.
+      </p>
+
+      <div class="border-t border-white/20 pt-5 mb-5 flex-grow">
+        <p class="font-semibold mb-4">Materi Bimbingan</p>
+        <ul class="space-y-3 text-sm text-gray-100">
+          <li>✓ HTML, CSS, dan JavaScript</li>
+          <li>✓ Frontend & Backend Development</li>
+          <li>✓ Database dan integrasi API</li>
+          <li>✓ Responsive Web Design</li>
+          <li>✓ Praktik pembuatan project website</li>
+        </ul>
+      </div>
+
+      <div class="mb-5">
+        <p class="text-sm text-gray-300 mb-1">Mulai dari</p>
+        <p class="text-2xl font-bold text-yellow-300">Rp 250.000,-</p>
+        <p class="text-sm text-gray-200 mt-1">Per sesi (60 menit)</p>
+      </div>
+
+      <a
+        href="https://wa.me/6281332989546?text=Halo%2C%20saya%20ingin%20konsultasi%20dan%20mengikuti%20bimbingan%20Website%20Development."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block text-center bg-yellow-400 hover:bg-yellow-500 text-indigo-950 py-3 px-4 rounded-xl font-semibold transition duration-300"
+      >
+        Pesan Bimbingan
+      </a>
+    </div>
+
+    <!-- Application Development -->
+    <div class="flex flex-col p-6 bg-gradient-to-br from-purple-900 via-purple-800 to-blue-900 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-1 text-white">
+      <h3 class="text-lg md:text-xl font-bold text-yellow-300 mb-3">
+        Application Development
+      </h3>
+
+      <p class="text-sm text-gray-200 leading-relaxed mb-5">
+        Pelajari proses pengembangan aplikasi dari perencanaan hingga
+        implementasi sesuai kebutuhan project.
+      </p>
+
+      <div class="border-t border-white/20 pt-5 mb-5 flex-grow">
+        <p class="font-semibold mb-4">Materi Bimbingan</p>
+        <ul class="space-y-3 text-sm text-gray-100">
+          <li>✓ Dasar pemrograman aplikasi</li>
+          <li>✓ Frontend dan Backend</li>
+          <li>✓ Database dan API</li>
+          <li>✓ Logika dan struktur aplikasi</li>
+          <li>✓ Praktik pengembangan project</li>
+        </ul>
+      </div>
+
+      <div class="mb-5">
+        <p class="text-sm text-gray-300 mb-1">Mulai dari</p>
+        <p class="text-2xl font-bold text-yellow-300">Rp 250.000,-</p>
+        <p class="text-sm text-gray-200 mt-1">Per sesi (60 menit)</p>
+      </div>
+
+      <a
+        href="https://wa.me/6281332989546?text=Halo%2C%20saya%20ingin%20konsultasi%20dan%20mengikuti%20bimbingan%20Application%20Development."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block text-center bg-yellow-400 hover:bg-yellow-500 text-indigo-950 py-3 px-4 rounded-xl font-semibold transition duration-300"
+      >
+        Pesan Bimbingan
+      </a>
+    </div>
+
+    <!-- Hosting & Deployment -->
+    <div class="flex flex-col p-6 bg-gradient-to-br from-purple-900 via-purple-800 to-blue-900 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-1 text-white">
+      <h3 class="text-lg md:text-xl font-bold text-yellow-300 mb-3">
+        Hosting & Deployment
+      </h3>
+
+      <p class="text-sm text-gray-200 leading-relaxed mb-5">
+        Pelajari cara mengunggah, mengonfigurasi, dan menjalankan website
+        atau aplikasi agar dapat diakses secara online.
+      </p>
+
+      <div class="border-t border-white/20 pt-5 mb-5 flex-grow">
+        <p class="font-semibold mb-4">Materi Bimbingan</p>
+        <ul class="space-y-3 text-sm text-gray-100">
+          <li>✓ Domain dan hosting</li>
+          <li>✓ Konfigurasi server dasar</li>
+          <li>✓ Deployment website dan aplikasi</li>
+          <li>✓ FTP, cPanel, dan database</li>
+          <li>✓ SSL dan konfigurasi website</li>
+        </ul>
+      </div>
+
+      <div class="mb-5">
+        <p class="text-sm text-gray-300 mb-1">Mulai dari</p>
+        <p class="text-2xl font-bold text-yellow-300">Rp 250.000,-</p>
+        <p class="text-sm text-gray-200 mt-1">Per sesi (60 menit)</p>
+      </div>
+
+      <a
+        href="https://wa.me/6281332989546?text=Halo%2C%20saya%20ingin%20konsultasi%20dan%20mengikuti%20bimbingan%20Hosting%20dan%20Deployment."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block text-center bg-yellow-400 hover:bg-yellow-500 text-indigo-950 py-3 px-4 rounded-xl font-semibold transition duration-300"
+      >
+        Pesan Bimbingan
+      </a>
+    </div>
+
+    <!-- WordPress Development -->
+    <div class="flex flex-col p-6 bg-gradient-to-br from-purple-900 via-purple-800 to-blue-900 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-1 text-white">
+      <h3 class="text-lg md:text-xl font-bold text-yellow-300 mb-3">
+        WordPress Development
+      </h3>
+
+      <p class="text-sm text-gray-200 leading-relaxed mb-5">
+        Bimbingan membuat dan mengelola website WordPress untuk kebutuhan
+        pribadi, bisnis, portofolio, maupun toko online.
+      </p>
+
+      <div class="border-t border-white/20 pt-5 mb-5 flex-grow">
+        <p class="font-semibold mb-4">Materi Bimbingan</p>
+        <ul class="space-y-3 text-sm text-gray-100">
+          <li>✓ Instalasi dan konfigurasi WordPress</li>
+          <li>✓ Theme dan plugin</li>
+          <li>✓ Desain dengan page builder</li>
+          <li>✓ Domain, hosting, dan deployment</li>
+          <li>✓ SEO dasar dan pengelolaan konten</li>
+        </ul>
+      </div>
+
+      <div class="mb-5">
+        <p class="text-sm text-gray-300 mb-1">Mulai dari</p>
+        <p class="text-2xl font-bold text-yellow-300">Rp 250.000,-</p>
+        <p class="text-sm text-gray-200 mt-1">Per sesi (60 menit)</p>
+      </div>
+
+      <a
+        href="https://wa.me/6281332989546?text=Halo%2C%20saya%20ingin%20konsultasi%20dan%20mengikuti%20bimbingan%20WordPress."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block text-center bg-yellow-400 hover:bg-yellow-500 text-indigo-950 py-3 px-4 rounded-xl font-semibold transition duration-300"
+      >
+        Pesan Bimbingan
+      </a>
+    </div>
+
+    <!-- Figma UI/UX Design -->
+    <div class="flex flex-col p-6 bg-gradient-to-br from-purple-900 via-purple-800 to-blue-900 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-1 text-white">
+      <h3 class="text-lg md:text-xl font-bold text-yellow-300 mb-3">
+        Figma UI/UX Design
+      </h3>
+
+      <p class="text-sm text-gray-200 leading-relaxed mb-5">
+        Pelajari proses perancangan antarmuka website dan aplikasi
+        yang menarik, konsisten, serta mudah digunakan.
+      </p>
+
+      <div class="border-t border-white/20 pt-5 mb-5 flex-grow">
+        <p class="font-semibold mb-4">Materi Bimbingan</p>
+        <ul class="space-y-3 text-sm text-gray-100">
+          <li>✓ Pengenalan Figma dan tools desain</li>
+          <li>✓ Dasar UI/UX Design</li>
+          <li>✓ Wireframe dan prototyping</li>
+          <li>✓ Layout, warna, dan tipografi</li>
+          <li>✓ Desain website dan aplikasi</li>
+        </ul>
+      </div>
+
+      <div class="mb-5">
+        <p class="text-sm text-gray-300 mb-1">Mulai dari</p>
+        <p class="text-2xl font-bold text-yellow-300">Rp 250.000,-</p>
+        <p class="text-sm text-gray-200 mt-1">Per sesi (60 menit)</p>
+      </div>
+
+      <a
+        href="https://wa.me/6281332989546?text=Halo%2C%20saya%20ingin%20konsultasi%20dan%20mengikuti%20bimbingan%20Figma%20UI%20UX%20Design."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block text-center bg-yellow-400 hover:bg-yellow-500 text-indigo-950 py-3 px-4 rounded-xl font-semibold transition duration-300"
+      >
+        Pesan Bimbingan
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Keuntungan Bimbingan IT -->
+  <div class="mt-20">
+
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Keuntungan Bimbingan IT
+      </h2>
+
+      <p class="text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Dapatkan pengalaman belajar yang lebih terarah, fleksibel,
+        dan berfokus pada kebutuhan serta target Anda.
+      </p>
+    </div>
+
+    <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Keuntungan 1 -->
+      <div class="p-6 bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition duration-300">
+        <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-purple-100 text-purple-700 text-2xl mb-4">
+          🎓
+        </div>
+        <h3 class="font-bold text-lg text-gray-900 mb-2">
+          Tentor Profesional
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Dibimbing oleh tentor berpengalaman di bidang IT yang memahami
+          kebutuhan pembelajaran maupun pengembangan project.
+        </p>
+      </div>
+
+      <!-- Keuntungan 2 -->
+      <div class="p-6 bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition duration-300">
+        <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-100 text-blue-700 text-2xl mb-4">
+          👨‍💻
+        </div>
+        <h3 class="font-bold text-lg text-gray-900 mb-2">
+          Private & Personal
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Bimbingan secara private agar proses belajar lebih fokus,
+          interaktif, dan sesuai dengan kebutuhan peserta.
+        </p>
+      </div>
+
+      <!-- Keuntungan 3 -->
+      <div class="p-6 bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition duration-300">
+        <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-yellow-100 text-yellow-700 text-2xl mb-4">
+          📚
+        </div>
+        <h3 class="font-bold text-lg text-gray-900 mb-2">
+          Materi Sesuai Kebutuhan
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Mulai dari dasar untuk pemula hingga materi lanjutan
+          yang berfokus pada kebutuhan dan target project Anda.
+        </p>
+      </div>
+
+      <!-- Keuntungan 4 -->
+      <div class="p-6 bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition duration-300">
+        <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-green-100 text-green-700 text-2xl mb-4">
+          🛠️
+        </div>
+        <h3 class="font-bold text-lg text-gray-900 mb-2">
+          Praktik Langsung
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Tidak hanya mempelajari teori, peserta juga berlatih
+          menerapkan materi secara langsung melalui praktik dan project.
+        </p>
+      </div>
+
+      <!-- Keuntungan 5 -->
+      <div class="p-6 bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition duration-300">
+        <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-red-100 text-red-700 text-2xl mb-4">
+          💡
+        </div>
+        <h3 class="font-bold text-lg text-gray-900 mb-2">
+          Konsultasi Project
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Diskusikan ide, kebutuhan, kendala teknis, debugging,
+          maupun pengembangan project bersama tentor.
+        </p>
+      </div>
+
+      <!-- Keuntungan 6 -->
+      <div class="p-6 bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition duration-300">
+        <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-indigo-100 text-indigo-700 text-2xl mb-4">
+          ⏱️
+        </div>
+        <h3 class="font-bold text-lg text-gray-900 mb-2">
+          Fleksibel
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Materi dan jumlah sesi dapat disesuaikan dengan kemampuan,
+          jadwal, target belajar, serta tingkat kesulitan project.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Informasi Sesi & Cara Order -->
+  <div class="mt-20">
+    <div class="relative overflow-hidden p-8 md:p-12 bg-gradient-to-br from-purple-900 via-purple-800 to-blue-900 rounded-2xl shadow-xl text-white">
+
+      <!-- Background Decoration -->
+      <div class="absolute -top-16 -right-16 w-48 h-48 bg-white/5 rounded-full pointer-events-none"></div>
+      <div class="absolute -bottom-20 -left-10 w-56 h-56 bg-white/5 rounded-full pointer-events-none"></div>
+
+      <div class="relative z-10">
+
+        <!-- Informasi Sesi -->
+        <div class="max-w-3xl mx-auto text-center">
+
+          <div class="w-16 h-16 flex items-center justify-center mx-auto rounded-2xl bg-white/10 text-yellow-300 text-3xl mb-6">
+            💻
+          </div>
+
+          <h3 class="text-2xl md:text-3xl font-bold text-yellow-300 mb-5">
+            Berapa Sesi yang Dibutuhkan?
+          </h3>
+
+          <p class="text-gray-200 leading-relaxed mb-4">
+            Tidak ada jumlah sesi yang wajib diambil. Anda dapat berkonsultasi
+            terlebih dahulu mengenai kebutuhan, kemampuan, dan project yang
+            ingin dikembangkan.
+          </p>
+
+          <p class="text-gray-200 leading-relaxed">
+            Tim Bangcoding akan membantu merekomendasikan materi, program
+            bimbingan, jumlah sesi, dan estimasi harga yang sesuai dengan
+            target pembelajaran maupun kebutuhan project Anda.
+          </p>
+
+        </div>
+
+        <!-- Cara Order -->
+        <div class="border-t border-white/20 pt-8 mt-10">
+
+          <div class="text-center mb-8">
+            <h4 class="text-xl md:text-2xl font-bold text-yellow-300 mb-3">
+              Cara Order Bimbingan IT
+            </h4>
+
+            <p class="text-gray-200 text-sm md:text-base max-w-2xl mx-auto">
+              Ikuti lima langkah berikut untuk memulai bimbingan IT
+              bersama Bangcoding.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+
+            <!-- Langkah 1 -->
+            <div class="bg-white/10 border border-white/10 rounded-xl p-5 text-center">
+              <div class="w-11 h-11 flex items-center justify-center mx-auto mb-4 rounded-full bg-yellow-300 text-purple-950 font-bold text-lg">
+                1
+              </div>
+              <h5 class="font-bold text-white mb-2">
+                Pilih Layanan
+              </h5>
+              <p class="text-sm text-gray-200 leading-relaxed">
+                Pilih topik bimbingan IT sesuai kebutuhan dan tujuan belajar Anda.
+              </p>
+            </div>
+
+            <!-- Langkah 2 -->
+            <div class="bg-white/10 border border-white/10 rounded-xl p-5 text-center">
+              <div class="w-11 h-11 flex items-center justify-center mx-auto mb-4 rounded-full bg-yellow-300 text-purple-950 font-bold text-lg">
+                2
+              </div>
+              <h5 class="font-bold text-white mb-2">
+                Konsultasi
+              </h5>
+              <p class="text-sm text-gray-200 leading-relaxed">
+                Diskusikan materi, target pembelajaran, jumlah sesi, dan biaya.
+              </p>
+            </div>
+
+            <!-- Langkah 3 -->
+            <div class="bg-white/10 border border-white/10 rounded-xl p-5 text-center">
+              <div class="w-11 h-11 flex items-center justify-center mx-auto mb-4 rounded-full bg-yellow-300 text-purple-950 font-bold text-lg">
+                3
+              </div>
+              <h5 class="font-bold text-white mb-2">
+                Pembayaran DP
+              </h5>
+              <p class="text-sm text-gray-200 leading-relaxed">
+                Lakukan pembayaran uang muka sesuai kesepakatan untuk
+                konfirmasi pemesanan.
+              </p>
+            </div>
+
+            <!-- Langkah 4 -->
+            <div class="bg-white/10 border border-white/10 rounded-xl p-5 text-center">
+              <div class="w-11 h-11 flex items-center justify-center mx-auto mb-4 rounded-full bg-yellow-300 text-purple-950 font-bold text-lg">
+                4
+              </div>
+              <h5 class="font-bold text-white mb-2">
+                Atur Jadwal
+              </h5>
+              <p class="text-sm text-gray-200 leading-relaxed">
+                Tentukan jadwal bimbingan bersama tentor sesuai kesepakatan.
+              </p>
+            </div>
+
+            <!-- Langkah 5 -->
+            <div class="bg-white/10 border border-white/10 rounded-xl p-5 text-center">
+              <div class="w-11 h-11 flex items-center justify-center mx-auto mb-4 rounded-full bg-yellow-300 text-purple-950 font-bold text-lg">
+                5
+              </div>
+              <h5 class="font-bold text-white mb-2">
+                Pelunasan
+              </h5>
+              <p class="text-sm text-gray-200 leading-relaxed">
+                Selesaikan pembayaran sesuai kesepakatan yang telah ditentukan.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
 </section>
 
   <!-- WhatsApp Floating Button with WhatsApp Logo -->
@@ -500,113 +1464,228 @@
   </svg>
 </a>
 
-  <!-- ===== SECTION KLIEN ===== -->
-<section id="klien" class="bg-grey-100 py-20 px-6">
-  <div class="max-w-7xl mx-auto text-center">
+  <!-- ===== SECTION KLIEN BANGCODING ===== -->
+<section id="klien" class="relative overflow-hidden bg-gray-50 py-16 md:py-24 px-6">
 
-    <!-- Judul -->
-    <h2 class="text-3xl md:text-4xl font-bold mb-14">
-      Klien Website Bangcoding
-    </h2>
+  <!-- Dekorasi Background -->
+  <div class="absolute -top-24 -left-24 w-72 h-72 bg-purple-200/30 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute -bottom-24 -right-24 w-72 h-72 bg-blue-200/30 rounded-full blur-3xl pointer-events-none"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto">
+
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+
+      <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-5">
+        Klien Website
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-700">
+          Bangcoding
+        </span>
+      </h2>
+
+      <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+        Terima kasih kepada para klien dan mitra yang telah mempercayakan
+        kebutuhan digital, pengembangan website, dan solusi IT bersama Bangcoding.
+      </p>
+
+      <!-- Garis Dekoratif -->
+      <div class="flex justify-center mt-6">
+        <div class="h-1 w-16 rounded-full bg-gradient-to-r from-purple-600 to-blue-600"></div>
+      </div>
+
+    </div>
 
     <!-- Grid Logo Klien -->
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-4 gap-y-6 items-center justify-items-center">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
 
-      <!-- Logo Item -->
-      <div class="flex items-center justify-center h-32">
-        <img src="sponsor/yogashala.jpeg" alt="Yoga Shala"
-          class="max-h-20 md:max-h-24 object-contain transition hover:scale-105">
+      <!-- Klien 1: Yoga Shala -->
+      <div class="group flex items-center justify-center h-32 md:h-36 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all duration-300 hover:-translate-y-1">
+        <img
+          src="sponsor/yogashala.jpeg"
+          alt="Logo Yoga Shala"
+          loading="lazy"
+          class="max-w-full max-h-20 md:max-h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+        >
       </div>
 
-      <div class="flex items-center justify-center h-32">
-        <img src="sponsor/bestbimbel.jpeg" alt="Best Bimbel"
-          class="max-h-20 md:max-h-24 object-contain transition hover:scale-105">
+      <!-- Klien 2: Best Bimbel -->
+      <div class="group flex items-center justify-center h-32 md:h-36 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all duration-300 hover:-translate-y-1">
+        <img
+          src="sponsor/bestbimbel.jpeg"
+          alt="Logo Best Bimbel"
+          loading="lazy"
+          class="max-w-full max-h-20 md:max-h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+        >
       </div>
 
-      <div class="flex items-center justify-center h-32">
-        <img src="sponsor/juko.jpeg" alt="Juragan Kopi"
-          class="max-h-20 md:max-h-24 object-contain transition hover:scale-105">
+      <!-- Klien 3: Juragan Kopi -->
+      <div class="group flex items-center justify-center h-32 md:h-36 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all duration-300 hover:-translate-y-1">
+        <img
+          src="sponsor/juko.jpeg"
+          alt="Logo Juragan Kopi"
+          loading="lazy"
+          class="max-w-full max-h-20 md:max-h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+        >
       </div>
 
-      <div class="flex items-center justify-center h-32">
-        <img src="sponsor/secondhome.jpeg" alt="Second Home"
-          class="max-h-20 md:max-h-24 object-contain transition hover:scale-105">
+      <!-- Klien 4: Second Home -->
+      <div class="group flex items-center justify-center h-32 md:h-36 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all duration-300 hover:-translate-y-1">
+        <img
+          src="sponsor/secondhome.jpeg"
+          alt="Logo Second Home"
+          loading="lazy"
+          class="max-w-full max-h-20 md:max-h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+        >
       </div>
 
-      <div class="flex items-center justify-center h-32">
-        <img src="sponsor/bejanaria.jpeg" alt="Bejanaria"
-          class="max-h-20 md:max-h-24 object-contain transition hover:scale-105">
+      <!-- Klien 5: Bejanaria -->
+      <div class="group flex items-center justify-center h-32 md:h-36 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all duration-300 hover:-translate-y-1">
+        <img
+          src="sponsor/bejanaria.jpeg"
+          alt="Logo Bejanaria"
+          loading="lazy"
+          class="max-w-full max-h-20 md:max-h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+        >
       </div>
 
-      <!-- Logo tambahan akan otomatis pindah ke baris berikutnya -->
-      <div class="flex items-center justify-center h-32">
-        <img src="sponsor/eduvision.jpeg" alt="Eduvision"
-          class="max-h-20 md:max-h-24 object-contain transition hover:scale-105">
+      <!-- Klien 6: Eduvision -->
+      <div class="group flex items-center justify-center h-32 md:h-36 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all duration-300 hover:-translate-y-1">
+        <img
+          src="sponsor/eduvision.jpeg"
+          alt="Logo Eduvision"
+          loading="lazy"
+          class="max-w-full max-h-20 md:max-h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+        >
       </div>
 
-      <div class="flex items-center justify-center h-32">
-        <img src="sponsor/khadijah.jpeg" alt="Khadijah"
-          class="max-h-20 md:max-h-24 object-contain transition hover:scale-105">
+      <!-- Klien 7: Khadijah -->
+      <div class="group flex items-center justify-center h-32 md:h-36 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all duration-300 hover:-translate-y-1">
+        <img
+          src="sponsor/khadijah.jpeg"
+          alt="Logo Khadijah"
+          loading="lazy"
+          class="max-w-full max-h-20 md:max-h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+        >
       </div>
 
-      <div class="flex items-center justify-center h-32">
-        <img src="sponsor/temantugasmu.jpeg" alt="Teman Tugasmu"
-          class="max-h-20 md:max-h-24 object-contain transition hover:scale-105">
+      <!-- Klien 8: Teman Tugasmu -->
+      <div class="group flex items-center justify-center h-32 md:h-36 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all duration-300 hover:-translate-y-1">
+        <img
+          src="sponsor/temantugasmu.jpeg"
+          alt="Logo Teman Tugasmu"
+          loading="lazy"
+          class="max-w-full max-h-20 md:max-h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+        >
       </div>
 
-      <div class="flex items-center justify-center h-32">
-        <img src="sponsor/ivander.jpeg" alt="Ivander"
-          class="max-h-20 md:max-h-24 object-contain transition hover:scale-105">
+      <!-- Klien 9: Ivander -->
+      <div class="group flex items-center justify-center h-32 md:h-36 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all duration-300 hover:-translate-y-1">
+        <img
+          src="sponsor/ivander.jpeg"
+          alt="Logo Ivander"
+          loading="lazy"
+          class="max-w-full max-h-20 md:max-h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+        >
       </div>
 
-      <div class="flex items-center justify-center h-32">
-        <img src="sponsor/kanala.jpeg" alt="Kanala"
-          class="max-h-20 md:max-h-24 object-contain transition hover:scale-105">
+      <!-- Klien 10: Kanala -->
+      <div class="group flex items-center justify-center h-32 md:h-36 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all duration-300 hover:-translate-y-1">
+        <img
+          src="sponsor/kanala.jpeg"
+          alt="Logo Kanala"
+          loading="lazy"
+          class="max-w-full max-h-20 md:max-h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+        >
       </div>
 
-      <div class="flex items-center justify-center h-32">
-        <img src="sponsor/kasihberseri.jpeg" alt="Kasih Berseri"
-          class="max-h-20 md:max-h-24 object-contain transition hover:scale-105">
+      <!-- Klien 11: Kasih Berseri -->
+      <div class="group flex items-center justify-center h-32 md:h-36 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all duration-300 hover:-translate-y-1">
+        <img
+          src="sponsor/kasihberseri.jpeg"
+          alt="Logo Kasih Berseri"
+          loading="lazy"
+          class="max-w-full max-h-20 md:max-h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+        >
       </div>
 
-      <div class="flex items-center justify-center h-32">
-        <img src="sponsor/about.jpeg" alt="About"
-          class="max-h-20 md:max-h-24 object-contain transition hover:scale-105">
+      <!-- Klien 12: About -->
+      <div class="group flex items-center justify-center h-32 md:h-36 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all duration-300 hover:-translate-y-1">
+        <img
+          src="sponsor/about.jpeg"
+          alt="Logo About"
+          loading="lazy"
+          class="max-w-full max-h-20 md:max-h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+        >
       </div>
 
-      <div class="flex items-center justify-center h-32">
-        <img src="sponsor/shalapilates.jpeg" alt="Shala Pilates"
-          class="max-h-20 md:max-h-24 object-contain transition hover:scale-105">
+      <!-- Klien 13: Shala Pilates -->
+      <div class="group flex items-center justify-center h-32 md:h-36 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all duration-300 hover:-translate-y-1">
+        <img
+          src="sponsor/shalapilates.jpeg"
+          alt="Logo Shala Pilates"
+          loading="lazy"
+          class="max-w-full max-h-20 md:max-h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+        >
       </div>
 
-      <div class="flex items-center justify-center h-32">
-        <img src="sponsor/ivander1.jpeg" alt="PT Ivander"
-          class="max-h-20 md:max-h-24 object-contain transition hover:scale-105">
+      <!-- Klien 14: PT Ivander -->
+      <div class="group flex items-center justify-center h-32 md:h-36 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all duration-300 hover:-translate-y-1">
+        <img
+          src="sponsor/ivander1.jpeg"
+          alt="Logo PT Ivander"
+          loading="lazy"
+          class="max-w-full max-h-20 md:max-h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+        >
       </div>
 
-      <div class="flex items-center justify-center h-32">
-        <img src="sponsor/asisten.jpeg" alt="Asisten"
-          class="max-h-20 md:max-h-24 object-contain transition hover:scale-105">
+      <!-- Klien 15: Asisten -->
+      <div class="group flex items-center justify-center h-32 md:h-36 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all duration-300 hover:-translate-y-1">
+        <img
+          src="sponsor/asisten.jpeg"
+          alt="Logo Asisten"
+          loading="lazy"
+          class="max-w-full max-h-20 md:max-h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+        >
       </div>
 
-      <div class="flex items-center justify-center h-32">
-        <img src="sponsor/academic.jpeg" alt="Academic"
-          class="max-h-20 md:max-h-24 object-contain transition hover:scale-105">
+      <!-- Klien 16: Academic -->
+      <div class="group flex items-center justify-center h-32 md:h-36 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all duration-300 hover:-translate-y-1">
+        <img
+          src="sponsor/academic.jpeg"
+          alt="Logo Academic"
+          loading="lazy"
+          class="max-w-full max-h-20 md:max-h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+        >
       </div>
 
-      <div class="flex items-center justify-center h-32">
-        <img src="sponsor/jenaka.jpeg" alt="Jenaka"
-          class="max-h-20 md:max-h-24 object-contain transition hover:scale-105">
+      <!-- Klien 17: Jenaka -->
+      <div class="group flex items-center justify-center h-32 md:h-36 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all duration-300 hover:-translate-y-1">
+        <img
+          src="sponsor/jenaka.jpeg"
+          alt="Logo Jenaka"
+          loading="lazy"
+          class="max-w-full max-h-20 md:max-h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+        >
       </div>
 
-      <div class="flex items-center justify-center h-32">
-        <img src="sponsor/perian.jpeg" alt="Perian Sukacita"
-          class="max-h-20 md:max-h-24 object-contain transition hover:scale-105">
+      <!-- Klien 18: Perian Sukacita -->
+      <div class="group flex items-center justify-center h-32 md:h-36 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all duration-300 hover:-translate-y-1">
+        <img
+          src="sponsor/perian.jpeg"
+          alt="Logo Perian Sukacita"
+          loading="lazy"
+          class="max-w-full max-h-20 md:max-h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+        >
       </div>
 
-      <div class="flex items-center justify-center h-32">
-        <img src="sponsor/buku.jpeg" alt="Buku"
-          class="max-h-20 md:max-h-24 object-contain transition hover:scale-105">
+      <!-- Klien 19: Buku -->
+      <div class="group flex items-center justify-center h-32 md:h-36 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all duration-300 hover:-translate-y-1">
+        <img
+          src="sponsor/buku.jpeg"
+          alt="Logo Buku"
+          loading="lazy"
+          class="max-w-full max-h-20 md:max-h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+        >
       </div>
 
     </div>
@@ -742,6 +1821,3 @@
   </script>
 </body>
 </html>
-
-
-
